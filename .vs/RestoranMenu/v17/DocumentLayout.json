@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|C:\\Users\\1741k\\source\\repos\\RestoranMenu\\restoranmenu\\forms\\customer\\pagedesserts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\pagedesserts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|C:\\Users\\1741k\\source\\repos\\RestoranMenu\\restoranmenu\\forms\\customer\\pagemain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\pagemain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|c:\\users\\1741k\\source\\repos\\restoranmenu\\restoranmenu\\forms\\customer\\pagedesserts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\pagedesserts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PageDesserts.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageDesserts.Designer.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\PageDesserts.Designer.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageDesserts.Designer.cs",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\PageDesserts.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:59:41.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PageMain.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageMain.Designer.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\PageMain.Designer.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageMain.Designer.cs",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\PageMain.Designer.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:02:29.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PageDesserts.cs",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageDesserts.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\PageDesserts.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageDesserts.cs",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\PageDesserts.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:01:12.59Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
