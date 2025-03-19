@@ -28,6 +28,7 @@ namespace RestoranMenu.Forms
         3-) Girişte Veritabanı Bağlantısı Kontrolü
         4-) Kullanıcı Girişi Veritabanı Komutları
         5-) Şifre Gösterme/Gizleme
+        6-) Enter Tuşu ile Giriş Yapma
 
         */
 
@@ -42,15 +43,14 @@ namespace RestoranMenu.Forms
         {
             InitializeComponent();
 
-            // 2.1-) Girişte Kullanıcı Adını Doldurma (Beni Hatırla Özelliği)
-
+            // 2.1-)
 
             if (Settings.Default.username != "")
             {
                 tbKullaniciAdi.Text = Settings.Default.username;
             }
 
-            // 3-) Girişte Veri Tabanı Bağlantısı Kontrolü (İsteğe Bağlı Kaldırılabilir)
+            // 3-)
 
             try
             {
@@ -78,14 +78,14 @@ namespace RestoranMenu.Forms
                 MessageBox.Show("Kullanıcı adı ve şifre giriniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            // 4-) Kullanıcı Girişi Veritabanı Komutları
+            // 4-)
             else
             {
                 try
                 {
                     con.Open();
                     SqlCommand command;
-                    string query = "SELECT username,password,user_type,name,surname FROM users WHERE username = @username AND password = @password";
+                    string query = "SELECT username,password,user_type,name,surname,user_id FROM users WHERE username = @username AND password = @password";
                     command = new SqlCommand(query, con);
                     command.Parameters.AddWithValue("@username", username);
                     command.Parameters.AddWithValue("@password", password);
@@ -109,7 +109,7 @@ namespace RestoranMenu.Forms
                                 secimForm.Show();
                             }
 
-                            // 2.2-) Beni Hatırla Özelliği Kontrolü
+                            // 2.2-)
                             if (switchBeniHatirla.Checked)
                             {
                                 Settings.Default.username = tbKullaniciAdi.Text;
@@ -123,6 +123,7 @@ namespace RestoranMenu.Forms
                             // Diğer Formlarda İsim Soyisim Tutmak İçin Veri Kaydı
                             Veriler.ad = dataReader["name"].ToString().Trim();
                             Veriler.soyad = dataReader["surname"].ToString().Trim();
+                            Veriler.user_id = dataReader["user_id"].ToString().Trim();
                         }
                         else
                         {
@@ -154,7 +155,7 @@ namespace RestoranMenu.Forms
             Application.Exit();
         }
 
-        // 5-) Şifre Gösterme/Gizleme
+        // 5-)
         private void tbSifre_OnIconRightClick(object sender, EventArgs e)
         {
             sifreGoster = !sifreGoster;
@@ -164,5 +165,16 @@ namespace RestoranMenu.Forms
             ? Properties.Resources.pass_open  // Açık göz ikonu
             : Properties.Resources.pass_close; // Kapalı göz ikonu
         }
+
+        // 6-)
+        private void PageLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnGirisYap.PerformClick(); // Burada tıklanmasını istediğin butonu çağır
+                e.SuppressKeyPress = true; // Enter tuşunun normal çalışmasını engelle
+            }
+        }
+
     }
 }

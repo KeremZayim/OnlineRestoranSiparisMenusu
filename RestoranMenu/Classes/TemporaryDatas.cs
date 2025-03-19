@@ -17,6 +17,8 @@ namespace RestoranMenu.Classes
     {
         public static string ad;
         public static string soyad;
+        public static string user_id;
+        public static List<string> foods = new List<string>();
     }
 }
 

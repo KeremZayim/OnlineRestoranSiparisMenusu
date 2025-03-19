@@ -29,33 +29,28 @@ namespace RestoranMenu.Forms.Customer
             2.4-) Kalori label
             2.5-) Fiyat label
             2.6-) Sepete Ekle Butonu
-        3-) Kontrol Eklemeleri
-     
-     
+        3-) Control Eklemeleri
      
      */
-    public partial class UrunleriListele: Form
+    public partial class PageListFoods : Form
     {
         private FlowLayoutPanel flowPanel = new FlowLayoutPanel();
-        public UrunleriListele()
+        public PageListFoods()
         {
             InitializeComponent();
             this.Text = "Yemek Listesi";
-            this.Size = new Size(1034,780);
+            this.Size = new Size(1050, 780);
 
             // 1-) FlowLayoutPanel ayarları
             flowPanel.Dock = DockStyle.Fill;
-            flowPanel.Padding = new Padding(20, 10, 20, 10); // Sağdan ve soldan 20px boşluk bırakır
+            flowPanel.Padding = new Padding(10, 10, 20, 10); // Sağdan ve soldan 20px boşluk bırakır
 
             flowPanel.AutoScroll = true;
             flowPanel.FlowDirection = FlowDirection.LeftToRight;
             flowPanel.WrapContents = true;
             this.Controls.Add(flowPanel);
-
-            // Verileri çek ve göster
-            //LoadFoods();
         }
-        //string query = "SELECT food_name, food_calorie, food_price, food_picture FROM foods";
+
         public void LoadFoods(string query)
         {
             using (SqlConnection con = new SqlConnection(SqlServer.ConnectionString))
@@ -71,7 +66,7 @@ namespace RestoranMenu.Forms.Customer
                     string foodPrice = reader["food_price"].ToString().Trim();
                     byte[] imageBytes = reader["food_picture"] as byte[];
 
-                    // 2.1-) Panel oluştur
+                    // 2.1-)
                     BunifuPanel panel = new BunifuPanel();
                     panel.BackgroundColor = Color.FromArgb(230, 230, 230);
                     panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -82,7 +77,7 @@ namespace RestoranMenu.Forms.Customer
                     panel.ShowBorders = true;
                     panel.Size = new System.Drawing.Size(240, 350);
 
-                    // 2.2-) PictureBox (Resim)
+                    // 2.2-)
                     BunifuPictureBox pictureBox = new BunifuPictureBox();
                     pictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
                     pictureBox.AutoSizeHeight = false;
@@ -101,9 +96,10 @@ namespace RestoranMenu.Forms.Customer
                         }
                     }
 
-                    // 2.3-) Yemek adı label
+                    // 2.3-)
                     BunifuLabel nameLabel = new BunifuLabel();
                     nameLabel.Text = foodName;
+                    nameLabel.Name = "nameLabel";
                     nameLabel.Location = new Point(0, 223);
                     nameLabel.AutoSize = false;
                     nameLabel.Size = new Size(240, 24);
@@ -112,7 +108,7 @@ namespace RestoranMenu.Forms.Customer
                     nameLabel.TextFormat = BunifuLabel.TextFormattingOptions.Default;
                     nameLabel.RightToLeft = RightToLeft.No;
 
-                    // 2.4-) Kalori label
+                    // 2.4-)
                     BunifuLabel calorieLabel = new BunifuLabel();
                     calorieLabel.Text = "Kalori: " + foodCalorie;
                     calorieLabel.Location = new Point(10, 240);
@@ -123,7 +119,7 @@ namespace RestoranMenu.Forms.Customer
                     calorieLabel.TextFormat = BunifuLabel.TextFormattingOptions.Default;
                     calorieLabel.RightToLeft = RightToLeft.No;
 
-                    // 2.5-) Fiyat label
+                    // 2.5-)
                     BunifuLabel priceLabel = new BunifuLabel();
                     priceLabel.Text = "Fiyat: " + foodPrice + " TL";
                     priceLabel.Location = new Point(10, 260);
@@ -134,7 +130,7 @@ namespace RestoranMenu.Forms.Customer
                     priceLabel.TextFormat = BunifuLabel.TextFormattingOptions.Default;
                     priceLabel.RightToLeft = RightToLeft.No;
 
-                    // 2.6-) Sepete Ekle Butonu
+                    // 2.6-)
                     BunifuButton sepeteEkle = new BunifuButton();
                     BunifuButton.BorderEdges borderEdges1 = new BunifuButton.BorderEdges();
                     sepeteEkle.AllowAnimations = true;
@@ -224,7 +220,9 @@ namespace RestoranMenu.Forms.Customer
                     sepeteEkle.TextPadding = new System.Windows.Forms.Padding(0);
                     sepeteEkle.UseDefaultRadiusAndThickness = true;
 
-                    // 3-) Kontrol Eklemeleri
+                    sepeteEkle.Click += SepeteEkle_Click;
+
+                    // 3-)
                     // Panel içine ekle
                     panel.Controls.Add(pictureBox);
                     panel.Controls.Add(nameLabel);
@@ -235,8 +233,22 @@ namespace RestoranMenu.Forms.Customer
                     // FlowLayoutPanel içine ekle
                     flowPanel.Controls.Add(panel);
                 }
-
                 reader.Close();
+            }
+        }
+        private void SepeteEkle_Click(object sender, EventArgs e)
+        {
+            BunifuButton button = sender as BunifuButton;
+            if (button != null)
+            {
+                // Butonun bağlı olduğu paneli alıyoruz
+                BunifuPanel panel = button.Parent as BunifuPanel;
+
+                // Paneldeki nameLabel'i buluyoruz
+                BunifuLabel nameLabel = panel.Controls.OfType<BunifuLabel>().FirstOrDefault(lbl => lbl.Name == "nameLabel");
+                
+                MessageBox.Show(nameLabel.Text + " sepete eklendi!");
+                Veriler.foods.Add(nameLabel.Text);
             }
         }
 

@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -46,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing">
@@ -182,11 +185,17 @@
     <Compile Include="Forms\Administrator\VersiyonSecim.Designer.cs">
       <DependentUpon>VersiyonSecim.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Customer\UrunleriListele.cs">
+    <Compile Include="Forms\Customer\PageOrders.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Customer\UrunleriListele.Designer.cs">
-      <DependentUpon>UrunleriListele.cs</DependentUpon>
+    <Compile Include="Forms\Customer\PageOrders.Designer.cs">
+      <DependentUpon>PageOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customer\PageListFoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\PageListFoods.Designer.cs">
+      <DependentUpon>PageListFoods.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Customer\PageMain.cs">
       <SubType>Form</SubType>
@@ -217,11 +226,14 @@
     <EmbeddedResource Include="Forms\Administrator\VersiyonSecim.resx">
       <DependentUpon>VersiyonSecim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Customer\UrunleriListele.resx">
-      <DependentUpon>UrunleriListele.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Customer\PageListFoods.resx">
+      <DependentUpon>PageListFoods.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Customer\PageMain.resx">
       <DependentUpon>PageMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customer\PageOrders.resx">
+      <DependentUpon>PageOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PageLogin.resx">
       <DependentUpon>PageLogin.cs</DependentUpon>
@@ -258,6 +270,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="logo.ico" />
     <Content Include="Resources\LoginPage\Closed Eye-32.png" />
     <Content Include="Resources\LoginPage\Closed Eye_1.png" />
     <Content Include="Resources\Data Provider.png" />
@@ -269,6 +282,7 @@
     <Content Include="Resources\LoginPage\Password.png" />
     <Content Include="Resources\LoginPage\Username.png" />
     <Content Include="Resources\login_bg.png" />
+    <None Include="Resources\logo.ico" />
     <Content Include="Resources\logo.png" />
     <Content Include="Resources\sepet.png" />
     <Content Include="Resources\Tableware.png" />

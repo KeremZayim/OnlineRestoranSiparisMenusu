@@ -117,50 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pnlOrders.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
-  <data name="Closed Eye-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\Closed Eye-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pnlToplamFiyat.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAZoAAABJCAYAAAAE2+BWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFlSURBVHhe7dexUUMxFEVBhZRBSEgpLoHQZdCZypAcuRQY
+        ETrln2zfzEa3gDNvjDHGmut9zfUNAFfZc3+cxozHfHzuuX8AIHA738ypzusAAP92GiM0AGSEBoCU0ACQ
+        EhoAUkIDQEpoAEgJDQApoQEgJTQApIQGgJTQAJASGgBSQgNASmgASAkNACmhASAlNACkhAaAlNAAkBIa
+        AFJCA0BKaABICQ0AKaEBICU0AKSEBoCU0ACQEhoAUkIDQEpoAEgJDQApoQEgJTQApIQGgJTQAJASGgBS
+        QgNASmgASAkNACmhASAlNACkhAaAlNAAkBIaAFJCA0BKaABICQ0AKaEBICU0AKSEBoCU0ACQEhoAUkID
+        QEpoAEgJDQApoQEgJTQApIQGgJTQAJASGgBSQgNASmgASAkNACmhASAlNACkhAaAlNAAkBIaAFJ/odlz
+        314HALjCmus+zq25vk51AOBC9+d8vv0CJX4iT9XsZtkAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="Tableware" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tableware.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lblTotalPrice.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 17px;font-family: 'Segoe UI'; font-size: 16pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: center; }</value>
   </data>
-  <data name="Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sepet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sepet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Username" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\Username.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data Provider" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data Provider.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Eye-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\Eye-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Closed Eye_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\Closed Eye_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pass-close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\pass-close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pass-open" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage\pass-open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 18px;font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: right; }</value>
   </data>
 </root>
