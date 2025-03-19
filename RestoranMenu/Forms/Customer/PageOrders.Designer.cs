@@ -90,10 +90,10 @@
             this.bunifuLabel2.AutoSize = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(3, 9);
+            this.bunifuLabel2.Location = new System.Drawing.Point(12, 9);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(324, 58);
+            this.bunifuLabel2.Size = new System.Drawing.Size(315, 58);
             this.bunifuLabel2.TabIndex = 3;
             this.bunifuLabel2.Text = "Toplam Fiyat:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;

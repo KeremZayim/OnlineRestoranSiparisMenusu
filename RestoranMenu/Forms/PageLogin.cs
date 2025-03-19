@@ -44,14 +44,12 @@ namespace RestoranMenu.Forms
             InitializeComponent();
 
             // 2.1-)
-
             if (Settings.Default.username != "")
             {
                 tbKullaniciAdi.Text = Settings.Default.username;
             }
 
             // 3-)
-
             try
             {
                 con.Open();
