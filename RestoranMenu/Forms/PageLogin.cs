@@ -1,5 +1,6 @@
 ﻿using RestoranMenu.Classes;
 using RestoranMenu.Forms.Administrator;
+using RestoranMenu.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,18 +17,40 @@ namespace RestoranMenu.Forms
 {
     public partial class PageLogin : Form
     {
+        /*
+         
+            Aşağıdaki Sayıları Aratarak Hızlı Kod Düzenlemesi Yapabilirsiniz!
 
+        1-) SQL Bağlantısı Tanımlama
+        2-) Beni Hatırla Özelliği
+            2.1-) Girişte Kullanıcı Adı Doldurma
+            2.2-) Kullanıcı Adı Kaydetme
+        3-) Girişte Veritabanı Bağlantısı Kontrolü
+        4-) Kullanıcı Girişi Veritabanı Komutları
+        5-) Şifre Gösterme/Gizleme
+
+        */
+
+
+        // 1-) SQL Bağlantısı Tanımlıyoruz
         SqlConnection con = new SqlConnection(SqlServer.ConnectionString);
+
         string username;
         string password;
+        bool sifreGoster = false;
         public PageLogin()
         {
             InitializeComponent();
 
-            if(Properties.Settings.Default.username != "")
+            // 2.1-) Girişte Kullanıcı Adını Doldurma (Beni Hatırla Özelliği)
+
+
+            if (Settings.Default.username != "")
             {
-                tbKullaniciAdi.Text = Properties.Settings.Default.username;
+                tbKullaniciAdi.Text = Settings.Default.username;
             }
+
+            // 3-) Girişte Veri Tabanı Bağlantısı Kontrolü (İsteğe Bağlı Kaldırılabilir)
 
             try
             {
@@ -49,11 +72,13 @@ namespace RestoranMenu.Forms
             username = tbKullaniciAdi.Text.Trim();
             password = tbSifre.Text.Trim();
 
+            // TextBox Boşluk Kontrolü
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Kullanıcı adı ve şifre giriniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            // 4-) Kullanıcı Girişi Veritabanı Komutları
             else
             {
                 try
@@ -78,20 +103,26 @@ namespace RestoranMenu.Forms
                             }
                             else if (dataReader.GetValue(2).ToString().Trim() == "Admin" || dataReader.GetValue(2).ToString().Trim() == "admin")
                             {
-                                //Login Formunu Kapatıp Main Formu Açtırma
-                                PageAdminMain AdminAnaForm = new PageAdminMain();
+                                //Login Formunu Kapatıp Admin Form Seçim Formu Açtırma
+                                VersiyonSecim secimForm = new VersiyonSecim();
                                 this.Hide();
-                                AdminAnaForm.Show();
+                                secimForm.Show();
                             }
+
+                            // 2.2-) Beni Hatırla Özelliği Kontrolü
                             if (switchBeniHatirla.Checked)
                             {
-                                Properties.Settings.Default.username = tbKullaniciAdi.Text;
+                                Settings.Default.username = tbKullaniciAdi.Text;
                             }
                             else
                             {
-                                Properties.Settings.Default.username = "";
+                                Settings.Default.username = "";
                             }
-                            Properties.Settings.Default.Save();
+                            Settings.Default.Save();
+
+                            // Diğer Formlarda İsim Soyisim Tutmak İçin Veri Kaydı
+                            Veriler.ad = dataReader["name"].ToString().Trim();
+                            Veriler.soyad = dataReader["surname"].ToString().Trim();
                         }
                         else
                         {
@@ -112,6 +143,7 @@ namespace RestoranMenu.Forms
             }
         }
 
+        // Sağ Üstteki Uygulamayı Kapat Butonu Renk Bugu Fix
         private void ExitButtonFocusFix(object sender, MouseEventArgs e)
         {
             this.ActiveControl = pnlMain;
@@ -120,6 +152,17 @@ namespace RestoranMenu.Forms
         private void ExitApplication(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        // 5-) Şifre Gösterme/Gizleme
+        private void tbSifre_OnIconRightClick(object sender, EventArgs e)
+        {
+            sifreGoster = !sifreGoster;
+
+            tbSifre.PasswordChar = sifreGoster ? '\0' : '*';
+            tbSifre.IconRight = sifreGoster
+            ? Properties.Resources.pass_open  // Açık göz ikonu
+            : Properties.Resources.pass_close; // Kapalı göz ikonu
         }
     }
 }

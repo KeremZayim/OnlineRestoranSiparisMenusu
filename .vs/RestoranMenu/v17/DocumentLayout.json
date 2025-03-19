@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|C:\\Users\\1741k\\source\\repos\\RestoranMenu\\restoranmenu\\forms\\customer\\pagedesserts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\pagedesserts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|c:\\users\\1741k\\source\\repos\\restoranmenu\\restoranmenu\\forms\\administrator\\versiyonsecim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\administrator\\versiyonsecim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|C:\\Users\\1741k\\source\\repos\\RestoranMenu\\restoranmenu\\forms\\customer\\pagemain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\pagemain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|c:\\users\\1741k\\source\\repos\\restoranmenu\\restoranmenu\\forms\\administrator\\versiyonsecim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\administrator\\versiyonsecim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|c:\\users\\1741k\\source\\repos\\restoranmenu\\restoranmenu\\forms\\customer\\pagedesserts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\pagedesserts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|C:\\Users\\1741k\\source\\repos\\RestoranMenu\\restoranmenu\\forms\\customer\\urunlerilistele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\urunlerilistele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|c:\\users\\1741k\\source\\repos\\restoranmenu\\restoranmenu\\forms\\administrator\\pageadminmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\administrator\\pageadminmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|c:\\users\\1741k\\source\\repos\\restoranmenu\\restoranmenu\\forms\\customer\\pagemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\pagemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|C:\\Users\\1741k\\source\\repos\\RestoranMenu\\restoranmenu\\forms\\customer\\urunlerilistele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{545B5A1F-237D-44F8-8E48-DB60D9E69314}|RestoranMenu\\RestoranMenu.csproj|solutionrelative:restoranmenu\\forms\\customer\\urunlerilistele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,50 +34,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PageDesserts.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageDesserts.Designer.cs",
-              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\PageDesserts.Designer.cs",
-              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageDesserts.Designer.cs",
-              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\PageDesserts.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABDAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "VersiyonSecim.cs",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Administrator\\VersiyonSecim.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Administrator\\VersiyonSecim.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Administrator\\VersiyonSecim.cs",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Administrator\\VersiyonSecim.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAArwBkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T11:59:41.654Z",
+              "WhenOpened": "2025-03-19T06:21:25.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PageMain.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageMain.Designer.cs",
-              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\PageMain.Designer.cs",
-              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageMain.Designer.cs",
-              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\PageMain.Designer.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAUwFAAAAAAAAAAAAAAAA==",
+              "Title": "VersiyonSecim.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Administrator\\VersiyonSecim.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Administrator\\VersiyonSecim.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Administrator\\VersiyonSecim.cs [Design]",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Administrator\\VersiyonSecim.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T11:02:29.043Z",
+              "WhenOpened": "2025-03-19T06:21:24.46Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageAdminMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Administrator\\PageAdminMain.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Administrator\\PageAdminMain.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Administrator\\PageAdminMain.cs [Design]",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Administrator\\PageAdminMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T06:20:32.707Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PageMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageMain.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\PageMain.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageMain.cs [Design]",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\PageMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T06:20:05.948Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UrunleriListele.cs",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\UrunleriListele.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\UrunleriListele.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\UrunleriListele.cs",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\UrunleriListele.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwCkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:00:04.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PageDesserts.cs",
-              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageDesserts.cs",
-              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\PageDesserts.cs",
-              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\PageDesserts.cs",
-              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\PageDesserts.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADsAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UrunleriListele.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\UrunleriListele.cs",
+              "RelativeDocumentMoniker": "RestoranMenu\\Forms\\Customer\\UrunleriListele.cs",
+              "ToolTip": "C:\\Users\\1741k\\source\\repos\\RestoranMenu\\RestoranMenu\\Forms\\Customer\\UrunleriListele.cs [Design]",
+              "RelativeToolTip": "RestoranMenu\\Forms\\Customer\\UrunleriListele.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T11:01:12.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T16:00:03.782Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

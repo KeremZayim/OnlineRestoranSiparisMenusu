@@ -162,12 +162,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\TemporaryDatas.cs" />
     <Compile Include="Classes\SqlServer.cs" />
-    <Compile Include="Forms\Administrator\PageAdminDesserts.cs">
+    <Compile Include="Forms\Administrator\Deserts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\PageAdminDesserts.Designer.cs">
-      <DependentUpon>PageAdminDesserts.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\Deserts.Designer.cs">
+      <DependentUpon>Deserts.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Administrator\PageAdminMain.cs">
       <SubType>Form</SubType>
@@ -181,11 +182,11 @@
     <Compile Include="Forms\Administrator\VersiyonSecim.Designer.cs">
       <DependentUpon>VersiyonSecim.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Customer\PageDesserts.cs">
+    <Compile Include="Forms\Customer\UrunleriListele.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Customer\PageDesserts.Designer.cs">
-      <DependentUpon>PageDesserts.cs</DependentUpon>
+    <Compile Include="Forms\Customer\UrunleriListele.Designer.cs">
+      <DependentUpon>UrunleriListele.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Customer\PageMain.cs">
       <SubType>Form</SubType>
@@ -207,8 +208,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="Forms\Administrator\PageAdminDesserts.resx">
-      <DependentUpon>PageAdminDesserts.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\Deserts.resx">
+      <DependentUpon>Deserts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageAdminMain.resx">
       <DependentUpon>PageAdminMain.cs</DependentUpon>
@@ -216,8 +217,8 @@
     <EmbeddedResource Include="Forms\Administrator\VersiyonSecim.resx">
       <DependentUpon>VersiyonSecim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Customer\PageDesserts.resx">
-      <DependentUpon>PageDesserts.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Customer\UrunleriListele.resx">
+      <DependentUpon>UrunleriListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Customer\PageMain.resx">
       <DependentUpon>PageMain.cs</DependentUpon>
@@ -257,11 +258,18 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\LoginPage\Closed Eye-32.png" />
+    <Content Include="Resources\LoginPage\Closed Eye_1.png" />
     <Content Include="Resources\Data Provider.png" />
+    <Content Include="Resources\LoginPage\Eye-32.png" />
+    <Content Include="Resources\LoginPage\Eye.png" />
     <Content Include="Resources\LoginPage\Login.png" />
+    <Content Include="Resources\LoginPage\pass-close.png" />
+    <Content Include="Resources\LoginPage\pass-open.png" />
     <Content Include="Resources\LoginPage\Password.png" />
     <Content Include="Resources\LoginPage\Username.png" />
     <Content Include="Resources\login_bg.png" />
+    <Content Include="Resources\logo.png" />
     <Content Include="Resources\sepet.png" />
     <Content Include="Resources\Tableware.png" />
   </ItemGroup>

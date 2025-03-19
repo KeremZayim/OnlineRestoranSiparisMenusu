@@ -51,7 +51,17 @@ namespace RestoranMenu.Forms.Administrator
 
         private void btnTatlilar_Click(object sender, EventArgs e)
         {
-            ChildFormAc(new PageAdminDesserts());
+            ChildFormAc(new Deserts());
+        }
+
+        private void btnSalatalar_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void PageAdminMain_Shown(object sender, EventArgs e)
+        {
+            lblYonetimBar.Text = Veriler.ad + " " + Veriler.soyad + " - Restoran Menüsü Yönetim Sistemi";
+            lblPeronalInformation.Text = Veriler.ad + " " + Veriler.soyad;
         }
     }
 }

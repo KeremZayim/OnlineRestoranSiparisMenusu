@@ -19,7 +19,7 @@ namespace RestoranMenu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PageDesserts());
+            Application.Run(new PageLogin());
         }
     }
 }

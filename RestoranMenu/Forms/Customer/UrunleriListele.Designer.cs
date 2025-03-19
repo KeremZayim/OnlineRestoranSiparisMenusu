@@ -1,6 +1,6 @@
 ﻿namespace RestoranMenu.Forms.Customer
 {
-    partial class PageDesserts
+    partial class UrunleriListele
     {
         /// <summary>
         /// Required designer variable.

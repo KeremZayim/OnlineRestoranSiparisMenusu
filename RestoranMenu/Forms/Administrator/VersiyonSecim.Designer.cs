@@ -45,14 +45,16 @@
             this.pbCustomer.AutoSizeHeight = true;
             this.pbCustomer.BackColor = System.Drawing.Color.Transparent;
             this.pbCustomer.BorderRadius = 0;
+            this.pbCustomer.Image = ((System.Drawing.Image)(resources.GetObject("pbCustomer.Image")));
             this.pbCustomer.IsCircle = false;
-            this.pbCustomer.Location = new System.Drawing.Point(220, 234);
+            this.pbCustomer.Location = new System.Drawing.Point(42, 62);
             this.pbCustomer.Name = "pbCustomer";
             this.pbCustomer.Size = new System.Drawing.Size(154, 154);
             this.pbCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCustomer.TabIndex = 0;
             this.pbCustomer.TabStop = false;
             this.pbCustomer.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.pbCustomer.Click += new System.EventHandler(this.pbCustomer_Click);
             // 
             // pbAdministrator
             // 
@@ -62,22 +64,24 @@
             this.pbAdministrator.BorderRadius = 0;
             this.pbAdministrator.Image = ((System.Drawing.Image)(resources.GetObject("pbAdministrator.Image")));
             this.pbAdministrator.IsCircle = false;
-            this.pbAdministrator.Location = new System.Drawing.Point(439, 234);
+            this.pbAdministrator.Location = new System.Drawing.Point(261, 62);
             this.pbAdministrator.Name = "pbAdministrator";
             this.pbAdministrator.Size = new System.Drawing.Size(154, 154);
             this.pbAdministrator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAdministrator.TabIndex = 0;
             this.pbAdministrator.TabStop = false;
             this.pbAdministrator.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.pbAdministrator.Click += new System.EventHandler(this.pbAdministrator_Click);
             // 
             // lblWelcome
             // 
             this.lblWelcome.AllowParentOverrides = false;
             this.lblWelcome.AutoEllipsis = false;
             this.lblWelcome.AutoSize = false;
+            this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblWelcome.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblWelcome.Location = new System.Drawing.Point(269, 200);
+            this.lblWelcome.Location = new System.Drawing.Point(91, 28);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblWelcome.Size = new System.Drawing.Size(285, 28);
@@ -91,14 +95,15 @@
             this.lblCustomer.AllowParentOverrides = false;
             this.lblCustomer.AutoEllipsis = false;
             this.lblCustomer.AutoSize = false;
+            this.lblCustomer.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblCustomer.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblCustomer.Location = new System.Drawing.Point(220, 407);
+            this.lblCustomer.Location = new System.Drawing.Point(42, 222);
             this.lblCustomer.Name = "lblCustomer";
             this.lblCustomer.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCustomer.Size = new System.Drawing.Size(154, 27);
             this.lblCustomer.TabIndex = 2;
-            this.lblCustomer.Text = "Sipariş Paneli";
+            this.lblCustomer.Text = "Menü Paneli";
             this.lblCustomer.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCustomer.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -109,7 +114,7 @@
             this.lblAdministrator.AutoSize = false;
             this.lblAdministrator.CursorType = null;
             this.lblAdministrator.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblAdministrator.Location = new System.Drawing.Point(439, 407);
+            this.lblAdministrator.Location = new System.Drawing.Point(261, 222);
             this.lblAdministrator.Name = "lblAdministrator";
             this.lblAdministrator.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAdministrator.Size = new System.Drawing.Size(154, 27);
@@ -122,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 542);
+            this.ClientSize = new System.Drawing.Size(477, 290);
             this.Controls.Add(this.lblAdministrator);
             this.Controls.Add(this.lblCustomer);
             this.Controls.Add(this.lblWelcome);
@@ -132,6 +137,7 @@
             this.Name = "VersiyonSecim";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VersiyonSecim";
+            this.Shown += new System.EventHandler(this.VersiyonSecim_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrator)).EndInit();
             this.ResumeLayout(false);

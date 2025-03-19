@@ -218,27 +218,6 @@
         n4KIPNJ5/c+B6iIiz9A1YHeUfj89ES0H5Ki19pWIbOk8ZjAYjIXiF/4Nc56AncfpAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="tbSifre.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA7JJREFUeF7t
-        mY1NHEEMhSmBElJCOkg6gA6gA9IBdBA6gA5CB6SDpAPSQejgRe9iE/PO87O3R7iT/Ekrwa49Y3s8np87
-        OSmKoiiKoiiKoiiK4q0AcArgE4ArANf2fLXH/+c3ypyq/tFhDl8AuAPwhOVQh7ps43gCYgZ/U2/2ANu8
-        0P4OAhttpnBrpL8DuAFwDuCz6jv8ZjKUpU4G+2Bf758VwfHfaiWAB3NmZ0Ot/UtrS2Gf7xcIK1iZ4+Sn
-        yq+FbWonBm24Uvk3A8BHAD/EiF8hGM8APqieElaFqarPNpM+I4+0TfX2iqVchM763HZuVC9iAcyKJN91
-        HQBwH+RZL9g3bYhcq95qLPo66pyXm5ETw5qjb/N5xKXqOZIF9/aOmaQ1grY27ViEjW6c64z4uch49W/O
-        fRuxWXorhdeCJ3nP9mM20OZXdi4mSfmXUQ8yHAGnmf5JBvV4VH3H0t7JbNFs2G1K2C4s8kVliIxsGvGk
-        gM2QprDUmzRTaGuQIXcq08SiGEeLaZV2RCQAqZwYPUurrWF/JJkSXCX6q03iPOfbqDIPDZosfkpaDGf6
-        c2zFifsH+pYHoeF8LhyYMUhkZmm1NZwCEfOrH4RdnScyv3tFUNfrHs+q70gRTOuEMgwCgNvwcdp5Jzj3
-        oN8cMXxEWnBJqPLNIGUkQfg3WGLcdooMiBsh/RaRDVOLzQanxayckmT5qwBodBYFQYpcWrycxvaVbLbV
-        Kh9Z0k8kcX47y9cEwXTdKe4Ku3omT2cYDD78e0bHd5zsqyvvTDnvNIIwW2ji6Nzq97VInZoa/eTk2nbe
-        sSDE2xjuqbt7AUeOqFNGziDBbZ43IuZ8PMPQp77zkaRgDS8drFOfCux8dRDEebY9HAy7rIksKpgvJEsX
-        z+zdKCbb3t0OI3/b0sNYetZwLHv1rqG5pE5hDsWqzULU3YE1dLrGR0w/XrBuHcEV220u0pnGdnt6J8cf
-        NJrZYNNBr61oIPXO/CrMHv7Nd9lvCGyjmfamrydX2jpVvBeRTAnO8+ZdvRnXWvdHbPYFgyBnF7PdvcRq
-        bGT1zp6jNgoEz+iaRRmUoWzPcf74oplCm5qZsnfMSB1ZGsVR6RnPYHC+6kaI70Z6bFsdpw3rCt2uDFKc
-        8/JMdZZg7XttUIZT5L8RAqFFz+FtDJe0TfFTfScUQ8pSJ4N9HIbjGZbOejG5DzY/tWl/B4tlBYPBHWUr
-        M3pQh7rDg9JREIofi6cXPx5w+Pj//NYthkVRFEVRFEVRFEVRrOYPxlB+7cOiK+kAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="lblRememberMe.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(245, 245, 245); text-align: left; }</value>
   </data>
