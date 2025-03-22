@@ -18,7 +18,7 @@ namespace RestoranMenu.Classes
         public static string ad;
         public static string soyad;
         public static string user_id;
-        public static List<string> foods = new List<string>();
+        public static Dictionary<string, int> Siparisler { get; set; } = new Dictionary<string, int>();
     }
 }
 

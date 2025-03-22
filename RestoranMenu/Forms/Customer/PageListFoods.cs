@@ -246,9 +246,23 @@ namespace RestoranMenu.Forms.Customer
 
                 // Paneldeki nameLabel'i buluyoruz
                 BunifuLabel nameLabel = panel.Controls.OfType<BunifuLabel>().FirstOrDefault(lbl => lbl.Name == "nameLabel");
-                
-                MessageBox.Show(nameLabel.Text + " sepete eklendi!");
-                Veriler.foods.Add(nameLabel.Text);
+
+                if (nameLabel != null)
+                {
+                    string urunAdi = nameLabel.Text;
+
+                    // Eğer ürün zaten sepette varsa adetini artır, yoksa yeni ekle
+                    if (Veriler.Siparisler.ContainsKey(urunAdi))
+                    {
+                        Veriler.Siparisler[urunAdi]++;
+                    }
+                    else
+                    {
+                        Veriler.Siparisler[urunAdi] = 1;
+                    }
+
+                    MessageBox.Show(urunAdi + " sepete eklendi!");
+                }
             }
         }
 
