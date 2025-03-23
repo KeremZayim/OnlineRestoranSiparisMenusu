@@ -165,6 +165,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Fonksiyonlar\SiparisOlustur.cs" />
     <Compile Include="Classes\TemporaryDatas.cs" />
     <Compile Include="Classes\SqlServer.cs" />
     <Compile Include="Forms\Administrator\Deserts.cs">
@@ -271,6 +272,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <Content Include="Resources\error_cloud.png" />
     <Content Include="Resources\LoginPage\Closed Eye-32.png" />
     <Content Include="Resources\LoginPage\Closed Eye_1.png" />
     <Content Include="Resources\Data Provider.png" />

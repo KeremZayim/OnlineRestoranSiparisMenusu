@@ -93,6 +93,16 @@ namespace RestoranMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap error_cloud {
+            get {
+                object obj = ResourceManager.GetObject("error_cloud", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Eye {
             get {
                 object obj = ResourceManager.GetObject("Eye", resourceCulture);

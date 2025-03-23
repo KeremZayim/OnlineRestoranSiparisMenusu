@@ -1,6 +1,7 @@
 ﻿using Bunifu.UI.WinForms;
 using Bunifu.UI.WinForms.BunifuButton;
 using RestoranMenu.Classes;
+using RestoranMenu.Classes.Fonksiyonlar;
 using RestoranMenu.Properties;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,7 @@ namespace RestoranMenu.Forms.Customer
         4-) Buton Click Eventleri
             4.1-) Azalt Butonu
             4.2-) Artır Butonu
+            4.3-) Sepete Ekle Butonu
         5-) Listeleme Fonksiyonu
 
          */
@@ -46,7 +48,7 @@ namespace RestoranMenu.Forms.Customer
         int price = 0, totalPrice = 0, adet = 1;
         int yOffset = 0;
         // Listeleme İçin
-        Dictionary<string, (BunifuLabel adetLabel, BunifuLabel fiyatLabel, int fiyat, BunifuPanel panel)> urunListesi = new Dictionary<string, (BunifuLabel, BunifuLabel, int, BunifuPanel)>();
+
 
         public PageOrders()
         {
@@ -59,7 +61,7 @@ namespace RestoranMenu.Forms.Customer
         {
             // Önceki siparişleri temizle
             pnlOrders.Controls.Clear();
-            urunListesi.Clear();
+            Veriler.urunListesi.Clear();
             totalPrice = 0;
             lblTotalPrice.Text = "0";
 
@@ -87,9 +89,9 @@ namespace RestoranMenu.Forms.Customer
         private void UrunEkle(string gida, int adet)
         {
             // Eğer ürün zaten eklenmişse adet ve fiyatı günceller
-            if (urunListesi.ContainsKey(gida))
+            if (Veriler.urunListesi.ContainsKey(gida))
             {
-                var urun = urunListesi[gida];
+                var urun = Veriler.urunListesi[gida];
                 urun.adetLabel.Text = adet.ToString();
                 urun.fiyatLabel.Text = (urun.fiyat * adet).ToString();
 
@@ -285,23 +287,23 @@ namespace RestoranMenu.Forms.Customer
             lblTotalPrice.Text = totalPrice.ToString();
 
             // Ürünü listeye ekle
-            urunListesi.Add(gida, (lblAdet, lblFiyat, price, pnlGidaSatir));
+            Veriler.urunListesi.Add(gida, (lblAdet, lblFiyat, price, pnlGidaSatir));
             Veriler.Siparisler[gida] = adet; // TemporaryDatas'a ekle
         }
 
         private void PageOrders_FormClosing(object sender, EventArgs e)
         {
             // Form gizlendiğinde sipariş bilgilerini TemporaryDatas'a kaydet
-            Veriler.Siparisler = new Dictionary<string, int>(urunListesi.ToDictionary(x => x.Key, x => int.Parse(x.Value.adetLabel.Text)));
+            Veriler.Siparisler = new Dictionary<string, int>(Veriler.urunListesi.ToDictionary(x => x.Key, x => int.Parse(x.Value.adetLabel.Text)));
         }
 
         // 4-)
         // 4.1-)
         private void BtnAzalt_Click(object sender, EventArgs e)
         {
-            if (sender is BunifuButton btn && btn.Tag is string gida && urunListesi.ContainsKey(gida))
+            if (sender is BunifuButton btn && btn.Tag is string gida && Veriler.urunListesi.ContainsKey(gida))
             {
-                var urun = urunListesi[gida];
+                var urun = Veriler.urunListesi[gida];
                 int adet = int.Parse(urun.adetLabel.Text);
 
                 if (adet > 1)
@@ -316,7 +318,7 @@ namespace RestoranMenu.Forms.Customer
                 {
                     // Eğer adet 1 ise ürünü tamamen kaldır
                     pnlOrders.Controls.Remove(urun.panel);
-                    urunListesi.Remove(gida);
+                    Veriler.urunListesi.Remove(gida);
                     totalPrice -= urun.fiyat;
                     Veriler.Siparisler.Remove(gida);
                     RefreshOrderList();
@@ -325,12 +327,13 @@ namespace RestoranMenu.Forms.Customer
                 lblTotalPrice.Text = totalPrice.ToString();
             }
         }
+
         // 4.2-)
         private void BtnArtır_Click(object sender, EventArgs e)
         {
-            if (sender is BunifuButton btn && btn.Tag is string gida && urunListesi.ContainsKey(gida))
+            if (sender is BunifuButton btn && btn.Tag is string gida && Veriler.urunListesi.ContainsKey(gida))
             {
-                var urun = urunListesi[gida];
+                var urun = Veriler.urunListesi[gida];
                 int adet = int.Parse(urun.adetLabel.Text);
                 adet++;
                 urun.adetLabel.Text = adet.ToString();
@@ -340,13 +343,45 @@ namespace RestoranMenu.Forms.Customer
                 Veriler.Siparisler[gida] = adet;
             }
         }
+
+        // 4.3-)
+        private void btnSepeteEkle_Click(object sender, EventArgs e)
+        {
+            if (Veriler.Siparisler.Count>1)
+            {
+                int orderId = SiparisOlustur.YeniSiparisEkle(int.Parse(Veriler.user_id));
+
+                if (orderId > 0)
+                {
+                    foreach (var siparis in Veriler.Siparisler)
+                    {
+                        int foodId = SiparisOlustur.FoodIdBul(siparis.Key);
+                        if (foodId > 0)
+                        {
+                            SiparisOlustur.SiparisDetayEkle(orderId, foodId, siparis.Value);
+                        }
+                    }
+                    MessageBox.Show("Sipariş başarıyla eklendi.", "Başarılı", MessageBoxButtons.OK);
+                    SiparisOlustur.SepetiTemizle();
+                }
+                else
+                {
+                    MessageBox.Show("Sipariş eklenirken hata oluştu.", "Başarılı", MessageBoxButtons.OK);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Sepete Ürün Ekleyiniz!", "Başarısız!", MessageBoxButtons.OK);
+            }
+        }
+
         // 5-)
         private void RefreshOrderList()
         {
             yOffset = 0;
             // Önceki siparişleri temizle
             pnlOrders.Controls.Clear();
-            urunListesi.Clear();
+            Veriler.urunListesi.Clear();
             totalPrice = 0;
             lblTotalPrice.Text = "0";
 

@@ -19,6 +19,7 @@ namespace RestoranMenu.Classes
         public static string soyad;
         public static string user_id;
         public static Dictionary<string, int> Siparisler { get; set; } = new Dictionary<string, int>();
+        public static Dictionary<string, (BunifuLabel adetLabel, BunifuLabel fiyatLabel, int fiyat, BunifuPanel panel)> urunListesi = new Dictionary<string, (BunifuLabel, BunifuLabel, int, BunifuPanel)>();
     }
 }
 

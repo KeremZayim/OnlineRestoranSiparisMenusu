@@ -30,17 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageMain));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges25 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges27 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnlHeadBar = new System.Windows.Forms.Panel();
+            this.pnlTopColorBar = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblYonetimBar = new Bunifu.UI.WinForms.BunifuLabel();
+            this.btnExit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlLastOrders = new Bunifu.UI.WinForms.BunifuPanel();
@@ -55,13 +57,13 @@
             this.btnTatlilar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnlLeftImage = new Bunifu.UI.WinForms.BunifuPanel();
             this.pbLogo = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.pnlTopColorBar = new Bunifu.UI.WinForms.BunifuPanel();
-            this.btnExit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dragControlHeadBar = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.dragControlLogo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.dragControlResim = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.pnlSeperator = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlHeadBar.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
+            this.pnlLastOrders.SuspendLayout();
             this.pnlLeft.SuspendLayout();
             this.pnlLeftImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -77,6 +79,21 @@
             this.pnlHeadBar.Name = "pnlHeadBar";
             this.pnlHeadBar.Size = new System.Drawing.Size(1280, 31);
             this.pnlHeadBar.TabIndex = 8;
+            // 
+            // pnlTopColorBar
+            // 
+            this.pnlTopColorBar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
+            this.pnlTopColorBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTopColorBar.BackgroundImage")));
+            this.pnlTopColorBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlTopColorBar.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlTopColorBar.BorderRadius = 3;
+            this.pnlTopColorBar.BorderThickness = 1;
+            this.pnlTopColorBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlTopColorBar.Location = new System.Drawing.Point(0, 30);
+            this.pnlTopColorBar.Name = "pnlTopColorBar";
+            this.pnlTopColorBar.ShowBorders = true;
+            this.pnlTopColorBar.Size = new System.Drawing.Size(1280, 1);
+            this.pnlTopColorBar.TabIndex = 8;
             // 
             // lblYonetimBar
             // 
@@ -95,6 +112,96 @@
             this.lblYonetimBar.Text = "--";
             this.lblYonetimBar.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblYonetimBar.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // btnExit
+            // 
+            this.btnExit.AllowAnimations = true;
+            this.btnExit.AllowMouseEffects = true;
+            this.btnExit.AllowToggling = false;
+            this.btnExit.AnimationSpeed = 200;
+            this.btnExit.AutoGenerateColors = false;
+            this.btnExit.AutoRoundBorders = false;
+            this.btnExit.AutoSizeLeftIcon = true;
+            this.btnExit.AutoSizeRightIcon = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnExit.ButtonText = "X";
+            this.btnExit.ButtonTextMarginLeft = 0;
+            this.btnExit.ColorContrastOnClick = 45;
+            this.btnExit.ColorContrastOnHover = 45;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btnExit.CustomizableEdges = borderEdges10;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnExit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnExit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnExit.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnExit.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnExit.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnExit.IconMarginLeft = 11;
+            this.btnExit.IconPadding = 10;
+            this.btnExit.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExit.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnExit.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnExit.IconSize = 25;
+            this.btnExit.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.btnExit.IdleBorderRadius = 1;
+            this.btnExit.IdleBorderThickness = 1;
+            this.btnExit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.btnExit.IdleIconLeftImage = null;
+            this.btnExit.IdleIconRightImage = null;
+            this.btnExit.IndicateFocus = false;
+            this.btnExit.Location = new System.Drawing.Point(1230, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnExit.OnDisabledState.BorderRadius = 1;
+            this.btnExit.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnExit.OnDisabledState.BorderThickness = 1;
+            this.btnExit.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnExit.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnExit.OnDisabledState.IconLeftImage = null;
+            this.btnExit.OnDisabledState.IconRightImage = null;
+            this.btnExit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnExit.onHoverState.BorderRadius = 1;
+            this.btnExit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnExit.onHoverState.BorderThickness = 1;
+            this.btnExit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnExit.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnExit.onHoverState.IconLeftImage = null;
+            this.btnExit.onHoverState.IconRightImage = null;
+            this.btnExit.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.btnExit.OnIdleState.BorderRadius = 1;
+            this.btnExit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnExit.OnIdleState.BorderThickness = 1;
+            this.btnExit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.btnExit.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnExit.OnIdleState.IconLeftImage = null;
+            this.btnExit.OnIdleState.IconRightImage = null;
+            this.btnExit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnExit.OnPressedState.BorderRadius = 1;
+            this.btnExit.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnExit.OnPressedState.BorderThickness = 1;
+            this.btnExit.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnExit.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnExit.OnPressedState.IconLeftImage = null;
+            this.btnExit.OnPressedState.IconRightImage = null;
+            this.btnExit.Size = new System.Drawing.Size(50, 30);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnExit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnExit.TextMarginLeft = 0;
+            this.btnExit.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnExit.UseDefaultRadiusAndThickness = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // bunifuPanel1
             // 
@@ -117,24 +224,26 @@
             // pnlMain
             // 
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(247, 110);
+            this.pnlMain.Location = new System.Drawing.Point(247, 184);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1033, 627);
+            this.pnlMain.Size = new System.Drawing.Size(1033, 553);
             this.pnlMain.TabIndex = 2;
             // 
             // pnlLastOrders
             // 
+            this.pnlLastOrders.AutoScroll = true;
             this.pnlLastOrders.BackgroundColor = System.Drawing.Color.Transparent;
             this.pnlLastOrders.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLastOrders.BackgroundImage")));
             this.pnlLastOrders.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlLastOrders.BorderColor = System.Drawing.Color.Transparent;
             this.pnlLastOrders.BorderRadius = 3;
             this.pnlLastOrders.BorderThickness = 1;
+            this.pnlLastOrders.Controls.Add(this.pnlSeperator);
             this.pnlLastOrders.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLastOrders.Location = new System.Drawing.Point(247, 0);
             this.pnlLastOrders.Name = "pnlLastOrders";
             this.pnlLastOrders.ShowBorders = true;
-            this.pnlLastOrders.Size = new System.Drawing.Size(1033, 110);
+            this.pnlLastOrders.Size = new System.Drawing.Size(1033, 184);
             this.pnlLastOrders.TabIndex = 1;
             // 
             // pnlLeft
@@ -180,11 +289,11 @@
             this.btnSepet.ColorContrastOnClick = 45;
             this.btnSepet.ColorContrastOnHover = 45;
             this.btnSepet.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges19.BottomLeft = false;
-            borderEdges19.BottomRight = true;
-            borderEdges19.TopLeft = false;
-            borderEdges19.TopRight = true;
-            this.btnSepet.CustomizableEdges = borderEdges19;
+            borderEdges11.BottomLeft = false;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = false;
+            borderEdges11.TopRight = true;
+            this.btnSepet.CustomizableEdges = borderEdges11;
             this.btnSepet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSepet.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSepet.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -271,11 +380,11 @@
             this.btnEtYemekleri.ColorContrastOnClick = 45;
             this.btnEtYemekleri.ColorContrastOnHover = 45;
             this.btnEtYemekleri.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges20.BottomLeft = false;
-            borderEdges20.BottomRight = true;
-            borderEdges20.TopLeft = false;
-            borderEdges20.TopRight = true;
-            this.btnEtYemekleri.CustomizableEdges = borderEdges20;
+            borderEdges12.BottomLeft = false;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = false;
+            borderEdges12.TopRight = true;
+            this.btnEtYemekleri.CustomizableEdges = borderEdges12;
             this.btnEtYemekleri.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEtYemekleri.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEtYemekleri.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -362,11 +471,11 @@
             this.btnMakarnalar.ColorContrastOnClick = 45;
             this.btnMakarnalar.ColorContrastOnHover = 45;
             this.btnMakarnalar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges21.BottomLeft = false;
-            borderEdges21.BottomRight = true;
-            borderEdges21.TopLeft = false;
-            borderEdges21.TopRight = true;
-            this.btnMakarnalar.CustomizableEdges = borderEdges21;
+            borderEdges13.BottomLeft = false;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = false;
+            borderEdges13.TopRight = true;
+            this.btnMakarnalar.CustomizableEdges = borderEdges13;
             this.btnMakarnalar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnMakarnalar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnMakarnalar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -453,11 +562,11 @@
             this.btnCorbalar.ColorContrastOnClick = 45;
             this.btnCorbalar.ColorContrastOnHover = 45;
             this.btnCorbalar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges22.BottomLeft = false;
-            borderEdges22.BottomRight = true;
-            borderEdges22.TopLeft = false;
-            borderEdges22.TopRight = true;
-            this.btnCorbalar.CustomizableEdges = borderEdges22;
+            borderEdges14.BottomLeft = false;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = false;
+            borderEdges14.TopRight = true;
+            this.btnCorbalar.CustomizableEdges = borderEdges14;
             this.btnCorbalar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCorbalar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCorbalar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -544,11 +653,11 @@
             this.btnSebzeYemekleri.ColorContrastOnClick = 45;
             this.btnSebzeYemekleri.ColorContrastOnHover = 45;
             this.btnSebzeYemekleri.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges23.BottomLeft = false;
-            borderEdges23.BottomRight = true;
-            borderEdges23.TopLeft = false;
-            borderEdges23.TopRight = true;
-            this.btnSebzeYemekleri.CustomizableEdges = borderEdges23;
+            borderEdges15.BottomLeft = false;
+            borderEdges15.BottomRight = true;
+            borderEdges15.TopLeft = false;
+            borderEdges15.TopRight = true;
+            this.btnSebzeYemekleri.CustomizableEdges = borderEdges15;
             this.btnSebzeYemekleri.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSebzeYemekleri.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSebzeYemekleri.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -635,11 +744,11 @@
             this.btnIcecekler.ColorContrastOnClick = 45;
             this.btnIcecekler.ColorContrastOnHover = 45;
             this.btnIcecekler.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges24.BottomLeft = false;
-            borderEdges24.BottomRight = true;
-            borderEdges24.TopLeft = false;
-            borderEdges24.TopRight = true;
-            this.btnIcecekler.CustomizableEdges = borderEdges24;
+            borderEdges16.BottomLeft = false;
+            borderEdges16.BottomRight = true;
+            borderEdges16.TopLeft = false;
+            borderEdges16.TopRight = true;
+            this.btnIcecekler.CustomizableEdges = borderEdges16;
             this.btnIcecekler.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnIcecekler.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnIcecekler.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -726,11 +835,11 @@
             this.btnSalatalar.ColorContrastOnClick = 45;
             this.btnSalatalar.ColorContrastOnHover = 45;
             this.btnSalatalar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges25.BottomLeft = false;
-            borderEdges25.BottomRight = true;
-            borderEdges25.TopLeft = false;
-            borderEdges25.TopRight = true;
-            this.btnSalatalar.CustomizableEdges = borderEdges25;
+            borderEdges17.BottomLeft = false;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = false;
+            borderEdges17.TopRight = true;
+            this.btnSalatalar.CustomizableEdges = borderEdges17;
             this.btnSalatalar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSalatalar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSalatalar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -817,11 +926,11 @@
             this.btnTatlilar.ColorContrastOnClick = 45;
             this.btnTatlilar.ColorContrastOnHover = 45;
             this.btnTatlilar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges26.BottomLeft = false;
-            borderEdges26.BottomRight = true;
-            borderEdges26.TopLeft = false;
-            borderEdges26.TopRight = true;
-            this.btnTatlilar.CustomizableEdges = borderEdges26;
+            borderEdges18.BottomLeft = false;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = false;
+            borderEdges18.TopRight = true;
+            this.btnTatlilar.CustomizableEdges = borderEdges18;
             this.btnTatlilar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTatlilar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(162)))), ((int)(((byte)(162)))));
             this.btnTatlilar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(162)))), ((int)(((byte)(162)))));
@@ -921,111 +1030,6 @@
             this.pbLogo.TabStop = false;
             this.pbLogo.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // pnlTopColorBar
-            // 
-            this.pnlTopColorBar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
-            this.pnlTopColorBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTopColorBar.BackgroundImage")));
-            this.pnlTopColorBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlTopColorBar.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlTopColorBar.BorderRadius = 3;
-            this.pnlTopColorBar.BorderThickness = 1;
-            this.pnlTopColorBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlTopColorBar.Location = new System.Drawing.Point(0, 30);
-            this.pnlTopColorBar.Name = "pnlTopColorBar";
-            this.pnlTopColorBar.ShowBorders = true;
-            this.pnlTopColorBar.Size = new System.Drawing.Size(1280, 1);
-            this.pnlTopColorBar.TabIndex = 8;
-            // 
-            // btnExit
-            // 
-            this.btnExit.AllowAnimations = true;
-            this.btnExit.AllowMouseEffects = true;
-            this.btnExit.AllowToggling = false;
-            this.btnExit.AnimationSpeed = 200;
-            this.btnExit.AutoGenerateColors = false;
-            this.btnExit.AutoRoundBorders = false;
-            this.btnExit.AutoSizeLeftIcon = true;
-            this.btnExit.AutoSizeRightIcon = true;
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
-            this.btnExit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnExit.ButtonText = "X";
-            this.btnExit.ButtonTextMarginLeft = 0;
-            this.btnExit.ColorContrastOnClick = 45;
-            this.btnExit.ColorContrastOnHover = 45;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges27.BottomLeft = true;
-            borderEdges27.BottomRight = true;
-            borderEdges27.TopLeft = true;
-            borderEdges27.TopRight = true;
-            this.btnExit.CustomizableEdges = borderEdges27;
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnExit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnExit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnExit.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnExit.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnExit.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnExit.IconMarginLeft = 11;
-            this.btnExit.IconPadding = 10;
-            this.btnExit.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnExit.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnExit.IconSize = 25;
-            this.btnExit.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnExit.IdleBorderRadius = 1;
-            this.btnExit.IdleBorderThickness = 1;
-            this.btnExit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnExit.IdleIconLeftImage = null;
-            this.btnExit.IdleIconRightImage = null;
-            this.btnExit.IndicateFocus = false;
-            this.btnExit.Location = new System.Drawing.Point(1230, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnExit.OnDisabledState.BorderRadius = 1;
-            this.btnExit.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnExit.OnDisabledState.BorderThickness = 1;
-            this.btnExit.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnExit.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnExit.OnDisabledState.IconLeftImage = null;
-            this.btnExit.OnDisabledState.IconRightImage = null;
-            this.btnExit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnExit.onHoverState.BorderRadius = 1;
-            this.btnExit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnExit.onHoverState.BorderThickness = 1;
-            this.btnExit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnExit.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnExit.onHoverState.IconLeftImage = null;
-            this.btnExit.onHoverState.IconRightImage = null;
-            this.btnExit.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnExit.OnIdleState.BorderRadius = 1;
-            this.btnExit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnExit.OnIdleState.BorderThickness = 1;
-            this.btnExit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnExit.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnExit.OnIdleState.IconLeftImage = null;
-            this.btnExit.OnIdleState.IconRightImage = null;
-            this.btnExit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnExit.OnPressedState.BorderRadius = 1;
-            this.btnExit.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnExit.OnPressedState.BorderThickness = 1;
-            this.btnExit.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnExit.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnExit.OnPressedState.IconLeftImage = null;
-            this.btnExit.OnPressedState.IconRightImage = null;
-            this.btnExit.Size = new System.Drawing.Size(50, 30);
-            this.btnExit.TabIndex = 6;
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnExit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnExit.TextMarginLeft = 0;
-            this.btnExit.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnExit.UseDefaultRadiusAndThickness = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // dragControlHeadBar
             // 
             this.dragControlHeadBar.Fixed = true;
@@ -1047,6 +1051,21 @@
             this.dragControlResim.TargetControl = this.pbLogo;
             this.dragControlResim.Vertical = true;
             // 
+            // pnlSeperator
+            // 
+            this.pnlSeperator.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
+            this.pnlSeperator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlSeperator.BackgroundImage")));
+            this.pnlSeperator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlSeperator.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlSeperator.BorderRadius = 3;
+            this.pnlSeperator.BorderThickness = 1;
+            this.pnlSeperator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlSeperator.Location = new System.Drawing.Point(0, 183);
+            this.pnlSeperator.Name = "pnlSeperator";
+            this.pnlSeperator.ShowBorders = false;
+            this.pnlSeperator.Size = new System.Drawing.Size(1033, 1);
+            this.pnlSeperator.TabIndex = 0;
+            // 
             // PageMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1061,6 +1080,7 @@
             this.Shown += new System.EventHandler(this.PageMain_Shown);
             this.pnlHeadBar.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
+            this.pnlLastOrders.ResumeLayout(false);
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeftImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
@@ -1091,6 +1111,7 @@
         private Bunifu.Framework.UI.BunifuDragControl dragControlHeadBar;
         private Bunifu.Framework.UI.BunifuDragControl dragControlLogo;
         private Bunifu.Framework.UI.BunifuDragControl dragControlResim;
+        private Bunifu.UI.WinForms.BunifuPanel pnlSeperator;
     }
 }
 
