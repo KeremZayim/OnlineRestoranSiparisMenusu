@@ -82,54 +82,48 @@ namespace RestoranMenu.Forms
                 try
                 {
                     con.Open();
-                    SqlCommand command;
                     string query = "SELECT username,password,user_type,name,surname,user_id FROM users WHERE username = @username AND password = @password";
-                    command = new SqlCommand(query, con);
+                    SqlCommand command = new SqlCommand(query, con);
                     command.Parameters.AddWithValue("@username", username);
                     command.Parameters.AddWithValue("@password", password);
+
                     SqlDataReader dataReader = command.ExecuteReader();
+                    bool foundUser = false; // Kullanıcı bulundu mu?
+
                     while (dataReader.Read())
                     {
-                        if (username == dataReader.GetValue(0).ToString().Trim() && password == dataReader.GetValue(1).ToString().Trim())
-                        {
-                            if (dataReader.GetValue(2).ToString().Trim() == "Customer" || dataReader.GetValue(2).ToString().Trim() == "customer")
-                            {
-                                //Login Formunu Kapatıp Main Formu Açtırma
-                                PageMain AnaForm = new PageMain();
-                                this.Hide();
-                                AnaForm.Show();
-                            }
-                            else if (dataReader.GetValue(2).ToString().Trim() == "Admin" || dataReader.GetValue(2).ToString().Trim() == "admin")
-                            {
-                                //Login Formunu Kapatıp Admin Form Seçim Formu Açtırma
-                                VersiyonSecim secimForm = new VersiyonSecim();
-                                this.Hide();
-                                secimForm.Show();
-                            }
+                        foundUser = true; // Kullanıcı bulundu
 
-                            // 2.2-)
-                            if (switchBeniHatirla.Checked)
-                            {
-                                Settings.Default.username = tbKullaniciAdi.Text;
-                            }
-                            else
-                            {
-                                Settings.Default.username = "";
-                            }
-                            Settings.Default.Save();
-
-                            // Diğer Formlarda İsim Soyisim Tutmak İçin Veri Kaydı
-                            Veriler.ad = dataReader["name"].ToString().Trim();
-                            Veriler.soyad = dataReader["surname"].ToString().Trim();
-                            Veriler.user_id = dataReader["user_id"].ToString().Trim();
-                        }
-                        else
+                        if (dataReader["user_type"].ToString().Trim().ToLower() == "customer")
                         {
-                            MessageBox.Show("Kullanıcı adın veya şifren yanlış!", "Giriş Başarısız!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            PageMain AnaForm = new PageMain();
+                            this.Hide();
+                            AnaForm.Show();
                         }
+                        else if (dataReader["user_type"].ToString().Trim().ToLower() == "admin")
+                        {
+                            VersiyonSecim secimForm = new VersiyonSecim();
+                            this.Hide();
+                            secimForm.Show();
+                        }
+
+                        // "Beni Hatırla" ayarları
+                        Settings.Default.username = switchBeniHatirla.Checked ? tbKullaniciAdi.Text : "";
+                        Settings.Default.Save();
+
+                        // Kullanıcı bilgilerini kaydet
+                        Veriler.ad = dataReader["name"].ToString().Trim();
+                        Veriler.soyad = dataReader["surname"].ToString().Trim();
+                        Veriler.user_id = dataReader["user_id"].ToString().Trim();
                     }
+
+                    dataReader.Close();
                     command.Dispose();
-                    con.Close();
+
+                    if (!foundUser) // Eğer hiç kullanıcı bulunamadıysa
+                    {
+                        MessageBox.Show("Kullanıcı adın veya şifren yanlış!", "Giriş Başarısız!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 catch (Exception ex)
                 {
