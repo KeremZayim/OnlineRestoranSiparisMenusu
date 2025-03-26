@@ -1,6 +1,6 @@
 ﻿namespace RestoranMenu.Forms.Administrator
 {
-    partial class PageVersiyonSecim
+    partial class PageSelectApp
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageVersiyonSecim));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageSelectApp));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pbCustomer = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pbAdministrator = new Bunifu.UI.WinForms.BunifuPictureBox();

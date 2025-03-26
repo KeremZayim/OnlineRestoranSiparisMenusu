@@ -51,7 +51,7 @@ namespace RestoranMenu.Forms.Administrator
 
         private void btnTatlilar_Click(object sender, EventArgs e)
         {
-            ChildFormAc(new PageUrunEkle());
+            ChildFormAc(new PageAddFood());
         }
 
         private void btnSalatalar_Click(object sender, EventArgs e)

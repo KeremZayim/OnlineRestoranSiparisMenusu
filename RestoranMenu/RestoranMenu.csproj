@@ -168,11 +168,11 @@
     <Compile Include="Classes\Fonksiyonlar\SiparisOlustur.cs" />
     <Compile Include="Classes\TemporaryDatas.cs" />
     <Compile Include="Classes\SqlServer.cs" />
-    <Compile Include="Forms\Administrator\PageUrunEkle.cs">
+    <Compile Include="Forms\Administrator\PageAddFood.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\PageUrunEkle.Designer.cs">
-      <DependentUpon>PageUrunEkle.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\PageAddFood.Designer.cs">
+      <DependentUpon>PageAddFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Administrator\PageAdminMain.cs">
       <SubType>Form</SubType>
@@ -180,11 +180,23 @@
     <Compile Include="Forms\Administrator\PageAdminMain.Designer.cs">
       <DependentUpon>PageAdminMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Administrator\PageVersiyonSecim.cs">
+    <Compile Include="Forms\Administrator\PageAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\PageVersiyonSecim.Designer.cs">
-      <DependentUpon>PageVersiyonSecim.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\PageAnalysis.Designer.cs">
+      <DependentUpon>PageAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\PageFoodEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\PageFoodEdit.Designer.cs">
+      <DependentUpon>PageFoodEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\PageSelectApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\PageSelectApp.Designer.cs">
+      <DependentUpon>PageSelectApp.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Customer\PageOrders.cs">
       <SubType>Form</SubType>
@@ -218,14 +230,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="Forms\Administrator\PageUrunEkle.resx">
-      <DependentUpon>PageUrunEkle.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\PageAddFood.resx">
+      <DependentUpon>PageAddFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageAdminMain.resx">
       <DependentUpon>PageAdminMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Administrator\PageVersiyonSecim.resx">
-      <DependentUpon>PageVersiyonSecim.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\PageAnalysis.resx">
+      <DependentUpon>PageAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\PageFoodEdit.resx">
+      <DependentUpon>PageFoodEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\PageSelectApp.resx">
+      <DependentUpon>PageSelectApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Customer\PageListFoods.resx">
       <DependentUpon>PageListFoods.cs</DependentUpon>

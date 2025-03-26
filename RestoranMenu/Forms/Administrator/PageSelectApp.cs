@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace RestoranMenu.Forms.Administrator
 {
-    public partial class PageVersiyonSecim: Form
+    public partial class PageSelectApp: Form
     {
-        public PageVersiyonSecim()
+        public PageSelectApp()
         {
             InitializeComponent();
         }

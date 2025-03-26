@@ -15,7 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace RestoranMenu.Forms.Administrator
 {
-    public partial class PageUrunEkle : Form
+    public partial class PageAddFood : Form
     {
         SqlConnection con = new SqlConnection(SqlServer.ConnectionString);
         SqlCommand command;
@@ -24,7 +24,7 @@ namespace RestoranMenu.Forms.Administrator
         int food_id, diet_id;
 
 
-        public PageUrunEkle()
+        public PageAddFood()
         {
             InitializeComponent();
             verileriYukle();
