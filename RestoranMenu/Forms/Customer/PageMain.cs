@@ -29,10 +29,34 @@ namespace RestoranMenu
         */
         string query;
         int xOffset;
+
+        private ContextMenuStrip trayMenu;
+
         public PageMain()
         {
             InitializeComponent();
+
+            // Sistem tepsisi menüsü oluştur
+            trayMenu = new ContextMenuStrip();
+            trayMenu.Items.Add("Ana Sayfa", null, ShowApp);
+            trayMenu.Items.Add("Çıkış", null, ExitApp);
+
+            trayIcon.ContextMenuStrip = trayMenu;
+            trayIcon.DoubleClick += ShowApp;
         }
+        private void ShowApp(object sender, EventArgs e)
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void ExitApp(object sender, EventArgs e)
+        {
+            trayIcon.Dispose();
+            Application.Exit();
+        }
+
+        /* */
 
         private void PageMain_Shown(object sender, EventArgs e)
         {

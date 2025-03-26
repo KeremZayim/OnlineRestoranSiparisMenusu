@@ -102,7 +102,7 @@ namespace RestoranMenu.Forms
                         }
                         else if (dataReader["user_type"].ToString().Trim().ToLower() == "admin")
                         {
-                            VersiyonSecim secimForm = new VersiyonSecim();
+                            PageVersiyonSecim secimForm = new PageVersiyonSecim();
                             this.Hide();
                             secimForm.Show();
                         }

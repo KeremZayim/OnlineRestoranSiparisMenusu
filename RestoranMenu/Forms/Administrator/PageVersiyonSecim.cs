@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace RestoranMenu.Forms.Administrator
 {
-    public partial class VersiyonSecim: Form
+    public partial class PageVersiyonSecim: Form
     {
-        public VersiyonSecim()
+        public PageVersiyonSecim()
         {
             InitializeComponent();
         }
@@ -35,6 +35,11 @@ namespace RestoranMenu.Forms.Administrator
             PageMain MainForm = new PageMain();
             this.Hide();
             MainForm.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

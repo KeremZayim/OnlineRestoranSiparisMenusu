@@ -15,7 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace RestoranMenu.Forms.Administrator
 {
-    public partial class Deserts : Form
+    public partial class PageUrunEkle : Form
     {
         SqlConnection con = new SqlConnection(SqlServer.ConnectionString);
         SqlCommand command;
@@ -24,7 +24,7 @@ namespace RestoranMenu.Forms.Administrator
         int food_id, diet_id;
 
 
-        public Deserts()
+        public PageUrunEkle()
         {
             InitializeComponent();
             verileriYukle();
@@ -154,15 +154,7 @@ namespace RestoranMenu.Forms.Administrator
 
         }
 
-        private void tbPrice_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8) // 8: Backspace tuşu
-            {
-                e.Handled = true; // Tuşun işlenmesini engelle
-            }
-        }
-
-        private void tbCalorie_KeyPress(object sender, KeyPressEventArgs e)
+        private void SadeceRakamGirisi(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8) // 8: Backspace tuşu
             {

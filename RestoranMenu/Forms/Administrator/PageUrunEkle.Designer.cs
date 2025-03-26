@@ -1,6 +1,6 @@
 ﻿namespace RestoranMenu.Forms.Administrator
 {
-    partial class Deserts
+    partial class PageUrunEkle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deserts));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageUrunEkle));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -51,9 +51,19 @@
             this.cbDiet_type = new Bunifu.UI.WinForms.BunifuDropdown();
             this.pb_food = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.btnKaydet = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.gbUrunEkle = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.lblGidaAdi = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblGidaKategorisi = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblDiyetTipi = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblKalori = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblFiyat = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pnlBaslik = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.lblUrunBilgileriBaslik = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_food)).BeginInit();
-            this.bunifuShadowPanel1.SuspendLayout();
+            this.gbUrunEkle.SuspendLayout();
+            this.bunifuPanel1.SuspendLayout();
+            this.pnlBaslik.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbFoodName
@@ -83,7 +93,7 @@
             this.tbFoodName.IconRight = null;
             this.tbFoodName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbFoodName.Lines = new string[0];
-            this.tbFoodName.Location = new System.Drawing.Point(46, 201);
+            this.tbFoodName.Location = new System.Drawing.Point(26, 138);
             this.tbFoodName.MaxLength = 32767;
             this.tbFoodName.MinimumSize = new System.Drawing.Size(1, 1);
             this.tbFoodName.Modified = false;
@@ -157,7 +167,7 @@
             this.tbCalorie.IconRight = null;
             this.tbCalorie.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCalorie.Lines = new string[0];
-            this.tbCalorie.Location = new System.Drawing.Point(46, 320);
+            this.tbCalorie.Location = new System.Drawing.Point(317, 239);
             this.tbCalorie.MaxLength = 32767;
             this.tbCalorie.MinimumSize = new System.Drawing.Size(1, 1);
             this.tbCalorie.Modified = false;
@@ -203,7 +213,7 @@
             this.tbCalorie.TextPlaceholder = "Kalori";
             this.tbCalorie.UseSystemPasswordChar = false;
             this.tbCalorie.WordWrap = true;
-            this.tbCalorie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCalorie_KeyPress);
+            this.tbCalorie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SadeceRakamGirisi);
             // 
             // tbPrice
             // 
@@ -232,7 +242,7 @@
             this.tbPrice.IconRight = null;
             this.tbPrice.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPrice.Lines = new string[0];
-            this.tbPrice.Location = new System.Drawing.Point(46, 408);
+            this.tbPrice.Location = new System.Drawing.Point(26, 335);
             this.tbPrice.MaxLength = 32767;
             this.tbPrice.MinimumSize = new System.Drawing.Size(1, 1);
             this.tbPrice.Modified = false;
@@ -278,7 +288,7 @@
             this.tbPrice.TextPlaceholder = "Fiyat";
             this.tbPrice.UseSystemPasswordChar = false;
             this.tbPrice.WordWrap = true;
-            this.tbPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPrice_KeyPress);
+            this.tbPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SadeceRakamGirisi);
             // 
             // btnResimSec
             // 
@@ -327,7 +337,7 @@
             this.btnResimSec.IdleIconLeftImage = null;
             this.btnResimSec.IdleIconRightImage = null;
             this.btnResimSec.IndicateFocus = false;
-            this.btnResimSec.Location = new System.Drawing.Point(46, 363);
+            this.btnResimSec.Location = new System.Drawing.Point(647, 335);
             this.btnResimSec.Name = "btnResimSec";
             this.btnResimSec.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnResimSec.OnDisabledState.BorderRadius = 1;
@@ -361,7 +371,7 @@
             this.btnResimSec.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnResimSec.OnPressedState.IconLeftImage = null;
             this.btnResimSec.OnPressedState.IconRightImage = null;
-            this.btnResimSec.Size = new System.Drawing.Size(260, 39);
+            this.btnResimSec.Size = new System.Drawing.Size(201, 52);
             this.btnResimSec.TabIndex = 1;
             this.btnResimSec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnResimSec.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -395,20 +405,20 @@
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Icon = null;
             this.cbCategory.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cbCategory.IndicatorColor = System.Drawing.Color.Black;
+            this.cbCategory.IndicatorColor = System.Drawing.Color.Gray;
             this.cbCategory.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.cbCategory.ItemBackColor = System.Drawing.Color.White;
             this.cbCategory.ItemBorderColor = System.Drawing.Color.White;
             this.cbCategory.ItemForeColor = System.Drawing.Color.Black;
-            this.cbCategory.ItemHeight = 26;
+            this.cbCategory.ItemHeight = 31;
             this.cbCategory.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cbCategory.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cbCategory.ItemTopMargin = 3;
-            this.cbCategory.Location = new System.Drawing.Point(46, 244);
+            this.cbCategory.Location = new System.Drawing.Point(26, 239);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(260, 32);
+            this.cbCategory.Size = new System.Drawing.Size(260, 37);
             this.cbCategory.TabIndex = 2;
-            this.cbCategory.Text = "Gıda Kategorisi";
+            this.cbCategory.Text = "Seçiniz";
             this.cbCategory.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.cbCategory.TextLeftMargin = 5;
             // 
@@ -442,13 +452,13 @@
             this.cbDiet_type.ItemBackColor = System.Drawing.Color.White;
             this.cbDiet_type.ItemBorderColor = System.Drawing.Color.White;
             this.cbDiet_type.ItemForeColor = System.Drawing.Color.Black;
-            this.cbDiet_type.ItemHeight = 26;
+            this.cbDiet_type.ItemHeight = 31;
             this.cbDiet_type.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cbDiet_type.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cbDiet_type.ItemTopMargin = 3;
-            this.cbDiet_type.Location = new System.Drawing.Point(46, 282);
+            this.cbDiet_type.Location = new System.Drawing.Point(317, 138);
             this.cbDiet_type.Name = "cbDiet_type";
-            this.cbDiet_type.Size = new System.Drawing.Size(260, 32);
+            this.cbDiet_type.Size = new System.Drawing.Size(260, 37);
             this.cbDiet_type.TabIndex = 2;
             this.cbDiet_type.Text = "Diyet Tipi";
             this.cbDiet_type.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -459,15 +469,17 @@
             this.pb_food.AllowFocused = false;
             this.pb_food.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_food.AutoSizeHeight = true;
-            this.pb_food.BorderRadius = 90;
+            this.pb_food.BorderRadius = 0;
+            this.pb_food.Image = global::RestoranMenu.Properties.Resources.error_cloud;
             this.pb_food.IsCircle = true;
-            this.pb_food.Location = new System.Drawing.Point(90, 14);
+            this.pb_food.Location = new System.Drawing.Point(657, 138);
             this.pb_food.Name = "pb_food";
             this.pb_food.Size = new System.Drawing.Size(181, 181);
             this.pb_food.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_food.TabIndex = 3;
             this.pb_food.TabStop = false;
-            this.pb_food.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.pb_food.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.pb_food.Click += new System.EventHandler(this.btnResimSec_Click);
             // 
             // btnKaydet
             // 
@@ -483,15 +495,15 @@
             this.btnKaydet.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.btnKaydet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKaydet.BackgroundImage")));
             this.btnKaydet.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnKaydet.ButtonText = "Ekle";
+            this.btnKaydet.ButtonText = "Ürün Ekle";
             this.btnKaydet.ButtonTextMarginLeft = 0;
             this.btnKaydet.ColorContrastOnClick = 45;
             this.btnKaydet.ColorContrastOnHover = 45;
             this.btnKaydet.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomLeft = false;
             borderEdges6.BottomRight = true;
             borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
+            borderEdges6.TopRight = false;
             this.btnKaydet.CustomizableEdges = borderEdges6;
             this.btnKaydet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKaydet.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -510,16 +522,16 @@
             this.btnKaydet.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnKaydet.IconSize = 25;
             this.btnKaydet.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnKaydet.IdleBorderRadius = 1;
+            this.btnKaydet.IdleBorderRadius = 20;
             this.btnKaydet.IdleBorderThickness = 1;
             this.btnKaydet.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.btnKaydet.IdleIconLeftImage = null;
             this.btnKaydet.IdleIconRightImage = null;
             this.btnKaydet.IndicateFocus = false;
-            this.btnKaydet.Location = new System.Drawing.Point(90, 470);
+            this.btnKaydet.Location = new System.Drawing.Point(348, 541);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnKaydet.OnDisabledState.BorderRadius = 1;
+            this.btnKaydet.OnDisabledState.BorderRadius = 20;
             this.btnKaydet.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnKaydet.OnDisabledState.BorderThickness = 1;
             this.btnKaydet.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -527,7 +539,7 @@
             this.btnKaydet.OnDisabledState.IconLeftImage = null;
             this.btnKaydet.OnDisabledState.IconRightImage = null;
             this.btnKaydet.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnKaydet.onHoverState.BorderRadius = 1;
+            this.btnKaydet.onHoverState.BorderRadius = 20;
             this.btnKaydet.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnKaydet.onHoverState.BorderThickness = 1;
             this.btnKaydet.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -535,7 +547,7 @@
             this.btnKaydet.onHoverState.IconLeftImage = null;
             this.btnKaydet.onHoverState.IconRightImage = null;
             this.btnKaydet.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnKaydet.OnIdleState.BorderRadius = 1;
+            this.btnKaydet.OnIdleState.BorderRadius = 20;
             this.btnKaydet.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnKaydet.OnIdleState.BorderThickness = 1;
             this.btnKaydet.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
@@ -543,14 +555,14 @@
             this.btnKaydet.OnIdleState.IconLeftImage = null;
             this.btnKaydet.OnIdleState.IconRightImage = null;
             this.btnKaydet.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnKaydet.OnPressedState.BorderRadius = 1;
+            this.btnKaydet.OnPressedState.BorderRadius = 20;
             this.btnKaydet.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnKaydet.OnPressedState.BorderThickness = 1;
             this.btnKaydet.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnKaydet.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnKaydet.OnPressedState.IconLeftImage = null;
             this.btnKaydet.OnPressedState.IconRightImage = null;
-            this.btnKaydet.Size = new System.Drawing.Size(150, 39);
+            this.btnKaydet.Size = new System.Drawing.Size(211, 70);
             this.btnKaydet.TabIndex = 4;
             this.btnKaydet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnKaydet.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -559,47 +571,173 @@
             this.btnKaydet.UseDefaultRadiusAndThickness = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
-            // bunifuShadowPanel1
+            // gbUrunEkle
             // 
-            this.bunifuShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuShadowPanel1.BorderRadius = 1;
-            this.bunifuShadowPanel1.BorderThickness = 1;
-            this.bunifuShadowPanel1.Controls.Add(this.tbFoodName);
-            this.bunifuShadowPanel1.Controls.Add(this.btnKaydet);
-            this.bunifuShadowPanel1.Controls.Add(this.tbCalorie);
-            this.bunifuShadowPanel1.Controls.Add(this.pb_food);
-            this.bunifuShadowPanel1.Controls.Add(this.tbPrice);
-            this.bunifuShadowPanel1.Controls.Add(this.cbDiet_type);
-            this.bunifuShadowPanel1.Controls.Add(this.btnResimSec);
-            this.bunifuShadowPanel1.Controls.Add(this.cbCategory);
-            this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(636, 36);
-            this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
-            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.WhiteSmoke;
-            this.bunifuShadowPanel1.ShadowColor = System.Drawing.Color.DarkGray;
-            this.bunifuShadowPanel1.ShadowDept = 2;
-            this.bunifuShadowPanel1.ShadowDepth = 5;
-            this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(343, 533);
-            this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel1.TabIndex = 5;
+            this.gbUrunEkle.BorderColor = System.Drawing.Color.LightGray;
+            this.gbUrunEkle.BorderRadius = 1;
+            this.gbUrunEkle.BorderThickness = 1;
+            this.gbUrunEkle.Controls.Add(this.bunifuPanel1);
+            this.gbUrunEkle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbUrunEkle.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gbUrunEkle.LabelIndent = 10;
+            this.gbUrunEkle.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
+            this.gbUrunEkle.Location = new System.Drawing.Point(20, 20);
+            this.gbUrunEkle.Name = "gbUrunEkle";
+            this.gbUrunEkle.Size = new System.Drawing.Size(994, 697);
+            this.gbUrunEkle.TabIndex = 6;
+            this.gbUrunEkle.TabStop = false;
+            this.gbUrunEkle.Text = "Ürün Ekle";
             // 
-            // PageAdminDesserts
+            // lblGidaAdi
+            // 
+            this.lblGidaAdi.AllowParentOverrides = false;
+            this.lblGidaAdi.AutoEllipsis = false;
+            this.lblGidaAdi.AutoSize = false;
+            this.lblGidaAdi.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblGidaAdi.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblGidaAdi.Location = new System.Drawing.Point(26, 104);
+            this.lblGidaAdi.Name = "lblGidaAdi";
+            this.lblGidaAdi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGidaAdi.Size = new System.Drawing.Size(260, 28);
+            this.lblGidaAdi.TabIndex = 5;
+            this.lblGidaAdi.Text = "Gıda Adı";
+            this.lblGidaAdi.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGidaAdi.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblGidaKategorisi
+            // 
+            this.lblGidaKategorisi.AllowParentOverrides = false;
+            this.lblGidaKategorisi.AutoEllipsis = false;
+            this.lblGidaKategorisi.AutoSize = false;
+            this.lblGidaKategorisi.CursorType = null;
+            this.lblGidaKategorisi.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblGidaKategorisi.Location = new System.Drawing.Point(26, 205);
+            this.lblGidaKategorisi.Name = "lblGidaKategorisi";
+            this.lblGidaKategorisi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGidaKategorisi.Size = new System.Drawing.Size(260, 28);
+            this.lblGidaKategorisi.TabIndex = 6;
+            this.lblGidaKategorisi.Text = "Gıda Kategorisi";
+            this.lblGidaKategorisi.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGidaKategorisi.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblDiyetTipi
+            // 
+            this.lblDiyetTipi.AllowParentOverrides = false;
+            this.lblDiyetTipi.AutoEllipsis = false;
+            this.lblDiyetTipi.AutoSize = false;
+            this.lblDiyetTipi.CursorType = null;
+            this.lblDiyetTipi.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblDiyetTipi.Location = new System.Drawing.Point(317, 104);
+            this.lblDiyetTipi.Name = "lblDiyetTipi";
+            this.lblDiyetTipi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblDiyetTipi.Size = new System.Drawing.Size(260, 28);
+            this.lblDiyetTipi.TabIndex = 7;
+            this.lblDiyetTipi.Text = "Diyet Tipi";
+            this.lblDiyetTipi.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDiyetTipi.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblKalori
+            // 
+            this.lblKalori.AllowParentOverrides = false;
+            this.lblKalori.AutoEllipsis = false;
+            this.lblKalori.AutoSize = false;
+            this.lblKalori.CursorType = null;
+            this.lblKalori.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblKalori.Location = new System.Drawing.Point(317, 205);
+            this.lblKalori.Name = "lblKalori";
+            this.lblKalori.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblKalori.Size = new System.Drawing.Size(260, 28);
+            this.lblKalori.TabIndex = 8;
+            this.lblKalori.Text = "Kalori";
+            this.lblKalori.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblKalori.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblFiyat
+            // 
+            this.lblFiyat.AllowParentOverrides = false;
+            this.lblFiyat.AutoEllipsis = false;
+            this.lblFiyat.AutoSize = false;
+            this.lblFiyat.CursorType = null;
+            this.lblFiyat.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblFiyat.Location = new System.Drawing.Point(26, 301);
+            this.lblFiyat.Name = "lblFiyat";
+            this.lblFiyat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblFiyat.Size = new System.Drawing.Size(260, 28);
+            this.lblFiyat.TabIndex = 9;
+            this.lblFiyat.Text = "Fiyat";
+            this.lblFiyat.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblFiyat.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 3;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.pnlBaslik);
+            this.bunifuPanel1.Controls.Add(this.pb_food);
+            this.bunifuPanel1.Controls.Add(this.lblFiyat);
+            this.bunifuPanel1.Controls.Add(this.cbCategory);
+            this.bunifuPanel1.Controls.Add(this.lblKalori);
+            this.bunifuPanel1.Controls.Add(this.cbDiet_type);
+            this.bunifuPanel1.Controls.Add(this.lblDiyetTipi);
+            this.bunifuPanel1.Controls.Add(this.btnResimSec);
+            this.bunifuPanel1.Controls.Add(this.lblGidaKategorisi);
+            this.bunifuPanel1.Controls.Add(this.tbPrice);
+            this.bunifuPanel1.Controls.Add(this.lblGidaAdi);
+            this.bunifuPanel1.Controls.Add(this.tbCalorie);
+            this.bunifuPanel1.Controls.Add(this.tbFoodName);
+            this.bunifuPanel1.Controls.Add(this.btnKaydet);
+            this.bunifuPanel1.Location = new System.Drawing.Point(42, 39);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(909, 629);
+            this.bunifuPanel1.TabIndex = 10;
+            // 
+            // pnlBaslik
+            // 
+            this.pnlBaslik.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBaslik.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlBaslik.BackgroundImage")));
+            this.pnlBaslik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBaslik.BorderRadius = 10;
+            this.pnlBaslik.Controls.Add(this.lblUrunBilgileriBaslik);
+            this.pnlBaslik.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBaslik.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(95)))), ((int)(((byte)(239)))));
+            this.pnlBaslik.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.pnlBaslik.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
+            this.pnlBaslik.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlBaslik.Location = new System.Drawing.Point(0, 0);
+            this.pnlBaslik.Name = "pnlBaslik";
+            this.pnlBaslik.Quality = 10;
+            this.pnlBaslik.Size = new System.Drawing.Size(909, 71);
+            this.pnlBaslik.TabIndex = 10;
+            // 
+            // lblUrunBilgileriBaslik
+            // 
+            this.lblUrunBilgileriBaslik.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUrunBilgileriBaslik.Location = new System.Drawing.Point(0, 0);
+            this.lblUrunBilgileriBaslik.Name = "lblUrunBilgileriBaslik";
+            this.lblUrunBilgileriBaslik.Size = new System.Drawing.Size(218, 71);
+            this.lblUrunBilgileriBaslik.TabIndex = 0;
+            this.lblUrunBilgileriBaslik.Text = "Ürün Bilgileri";
+            this.lblUrunBilgileriBaslik.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PageUrunEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 737);
-            this.Controls.Add(this.bunifuShadowPanel1);
+            this.Controls.Add(this.gbUrunEkle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PageAdminDesserts";
+            this.Name = "PageUrunEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PageAdminDesserts";
+            this.Text = "Yummy Day | Ürün Ekle";
             ((System.ComponentModel.ISupportInitialize)(this.pb_food)).EndInit();
-            this.bunifuShadowPanel1.ResumeLayout(false);
+            this.gbUrunEkle.ResumeLayout(false);
+            this.bunifuPanel1.ResumeLayout(false);
+            this.pnlBaslik.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -614,6 +752,14 @@
         private Bunifu.UI.WinForms.BunifuDropdown cbDiet_type;
         private Bunifu.UI.WinForms.BunifuPictureBox pb_food;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnKaydet;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
+        private Bunifu.UI.WinForms.BunifuGroupBox gbUrunEkle;
+        private Bunifu.UI.WinForms.BunifuLabel lblGidaAdi;
+        private Bunifu.UI.WinForms.BunifuLabel lblGidaKategorisi;
+        private Bunifu.UI.WinForms.BunifuLabel lblDiyetTipi;
+        private Bunifu.UI.WinForms.BunifuLabel lblKalori;
+        private Bunifu.UI.WinForms.BunifuLabel lblFiyat;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuGradientPanel pnlBaslik;
+        private System.Windows.Forms.Label lblUrunBilgileriBaslik;
     }
 }

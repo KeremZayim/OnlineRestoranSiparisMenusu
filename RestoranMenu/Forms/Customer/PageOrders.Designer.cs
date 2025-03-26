@@ -202,7 +202,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PageOrders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "PageOrders";
+            this.Text = "Yummy Day | Siparişler";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PageOrders_FormClosing);
             this.Shown += new System.EventHandler(this.PageOrders_Shown);
             this.pnlToplamFiyat.ResumeLayout(false);

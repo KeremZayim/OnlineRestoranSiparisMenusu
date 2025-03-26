@@ -168,11 +168,11 @@
     <Compile Include="Classes\Fonksiyonlar\SiparisOlustur.cs" />
     <Compile Include="Classes\TemporaryDatas.cs" />
     <Compile Include="Classes\SqlServer.cs" />
-    <Compile Include="Forms\Administrator\Deserts.cs">
+    <Compile Include="Forms\Administrator\PageUrunEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\Deserts.Designer.cs">
-      <DependentUpon>Deserts.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\PageUrunEkle.Designer.cs">
+      <DependentUpon>PageUrunEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Administrator\PageAdminMain.cs">
       <SubType>Form</SubType>
@@ -180,11 +180,11 @@
     <Compile Include="Forms\Administrator\PageAdminMain.Designer.cs">
       <DependentUpon>PageAdminMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Administrator\VersiyonSecim.cs">
+    <Compile Include="Forms\Administrator\PageVersiyonSecim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\VersiyonSecim.Designer.cs">
-      <DependentUpon>VersiyonSecim.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\PageVersiyonSecim.Designer.cs">
+      <DependentUpon>PageVersiyonSecim.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Customer\PageOrders.cs">
       <SubType>Form</SubType>
@@ -218,14 +218,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="Forms\Administrator\Deserts.resx">
-      <DependentUpon>Deserts.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\PageUrunEkle.resx">
+      <DependentUpon>PageUrunEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageAdminMain.resx">
       <DependentUpon>PageAdminMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Administrator\VersiyonSecim.resx">
-      <DependentUpon>VersiyonSecim.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\PageVersiyonSecim.resx">
+      <DependentUpon>PageVersiyonSecim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Customer\PageListFoods.resx">
       <DependentUpon>PageListFoods.cs</DependentUpon>
