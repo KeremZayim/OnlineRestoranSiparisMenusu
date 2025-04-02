@@ -40,28 +40,30 @@ namespace RestoranMenu.Forms.Administrator
             InitializeComponent();
         }
 
-        private void ExitApplication(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void PageAdminMain_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void btnTatlilar_Click(object sender, EventArgs e)
-        {
-            ChildFormAc(new PageAddFood());
-        }
-
-        private void btnSalatalar_Click(object sender, EventArgs e)
-        {
-        }
-
         private void PageAdminMain_Shown(object sender, EventArgs e)
         {
             lblYonetimBar.Text = Veriler.ad + " " + Veriler.soyad + " - Restoran Menüsü Yönetim Sistemi";
             lblPeronalInformation.Text = Veriler.ad + " " + Veriler.soyad;
         }
+
+        private void ExitApplication(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnSalatalar_Click(object sender, EventArgs e)
+        {
+            ChildFormAc(new PageAddFood());
+        }
+        private void btnUrunDuzenle_Click(object sender, EventArgs e)
+        {
+            ChildFormAc(new PageEditFood());
+        }
+
+        private void btnAnaliz_Click(object sender, EventArgs e)
+        {
+            ChildFormAc(new PageAnalysis());
+        }
+
+
     }
 }

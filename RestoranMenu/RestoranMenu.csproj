@@ -153,6 +153,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -186,11 +187,11 @@
     <Compile Include="Forms\Administrator\PageAnalysis.Designer.cs">
       <DependentUpon>PageAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Administrator\PageFoodEdit.cs">
+    <Compile Include="Forms\Administrator\PageEditFood.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\PageFoodEdit.Designer.cs">
-      <DependentUpon>PageFoodEdit.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\PageEditFood.Designer.cs">
+      <DependentUpon>PageEditFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Administrator\PageSelectApp.cs">
       <SubType>Form</SubType>
@@ -198,11 +199,11 @@
     <Compile Include="Forms\Administrator\PageSelectApp.Designer.cs">
       <DependentUpon>PageSelectApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Customer\PageOrders.cs">
+    <Compile Include="Forms\Customer\PageCart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Customer\PageOrders.Designer.cs">
-      <DependentUpon>PageOrders.cs</DependentUpon>
+    <Compile Include="Forms\Customer\PageCart.Designer.cs">
+      <DependentUpon>PageCart.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Customer\PageListFoods.cs">
       <SubType>Form</SubType>
@@ -239,8 +240,8 @@
     <EmbeddedResource Include="Forms\Administrator\PageAnalysis.resx">
       <DependentUpon>PageAnalysis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Administrator\PageFoodEdit.resx">
-      <DependentUpon>PageFoodEdit.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\PageEditFood.resx">
+      <DependentUpon>PageEditFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageSelectApp.resx">
       <DependentUpon>PageSelectApp.cs</DependentUpon>
@@ -251,8 +252,8 @@
     <EmbeddedResource Include="Forms\Customer\PageMain.resx">
       <DependentUpon>PageMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Customer\PageOrders.resx">
-      <DependentUpon>PageOrders.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Customer\PageCart.resx">
+      <DependentUpon>PageCart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PageLogin.resx">
       <DependentUpon>PageLogin.cs</DependentUpon>
@@ -304,6 +305,7 @@
     <Content Include="Resources\login_bg.png" />
     <None Include="Resources\logo.ico" />
     <Content Include="Resources\logo.png" />
+    <Content Include="Resources\manager.png" />
     <Content Include="Resources\sepet.png" />
     <Content Include="Resources\Tableware.png" />
   </ItemGroup>

@@ -19,7 +19,7 @@ namespace RestoranMenu
 
          - Son Siparişler -
          3-) Veri Tabanından Fotoğrafı Çekme
-         4-) Komponentler
+         4-) Son Siparişleri Getir - Komponentler
             4.1-) Panel
             4.2-) Picture Box
             4.3-) Label
@@ -153,6 +153,8 @@ namespace RestoranMenu
                 return Image.FromStream(ms);
             }
         }
+
+        // 4-)
         private void SonSiparisleriGetir()
         {
             using (SqlConnection con = new SqlConnection(SqlServer.ConnectionString))
@@ -229,8 +231,8 @@ namespace RestoranMenu
         private void btnSepet_Click(object sender, EventArgs e)
         {
             pnlMain.Controls.Clear();
-            PageOrders child = pnlMain.Controls.OfType<PageOrders>().FirstOrDefault();
-            child = new PageOrders();
+            PageCart child = pnlMain.Controls.OfType<PageCart>().FirstOrDefault();
+            child = new PageCart();
             child.TopLevel = false;  // Formu panel içinde gösterebilmek için
             child.FormBorderStyle = FormBorderStyle.None;
             child.Dock = DockStyle.Fill;

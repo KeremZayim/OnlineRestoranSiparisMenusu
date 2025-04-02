@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageSelectApp));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pbCustomer = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pbAdministrator = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblWelcome = new Bunifu.UI.WinForms.BunifuLabel();
@@ -41,9 +41,15 @@
             this.pnlHeadBar = new System.Windows.Forms.Panel();
             this.dragControlHeadBar = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlHeadBarSeperator = new System.Windows.Forms.Panel();
+            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pnlCustomerSeperator = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrator)).BeginInit();
             this.pnlHeadBar.SuspendLayout();
+            this.bunifuShadowPanel1.SuspendLayout();
+            this.bunifuShadowPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbCustomer
@@ -53,11 +59,11 @@
             this.pbCustomer.AutoSizeHeight = true;
             this.pbCustomer.BackColor = System.Drawing.Color.Transparent;
             this.pbCustomer.BorderRadius = 0;
-            this.pbCustomer.Image = ((System.Drawing.Image)(resources.GetObject("pbCustomer.Image")));
+            this.pbCustomer.Image = global::RestoranMenu.Properties.Resources.manager;
             this.pbCustomer.IsCircle = false;
-            this.pbCustomer.Location = new System.Drawing.Point(47, 70);
+            this.pbCustomer.Location = new System.Drawing.Point(36, 38);
             this.pbCustomer.Name = "pbCustomer";
-            this.pbCustomer.Size = new System.Drawing.Size(154, 154);
+            this.pbCustomer.Size = new System.Drawing.Size(220, 220);
             this.pbCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCustomer.TabIndex = 0;
             this.pbCustomer.TabStop = false;
@@ -70,11 +76,11 @@
             this.pbAdministrator.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbAdministrator.AutoSizeHeight = true;
             this.pbAdministrator.BorderRadius = 0;
-            this.pbAdministrator.Image = ((System.Drawing.Image)(resources.GetObject("pbAdministrator.Image")));
+            this.pbAdministrator.Image = global::RestoranMenu.Properties.Resources.Tableware;
             this.pbAdministrator.IsCircle = false;
-            this.pbAdministrator.Location = new System.Drawing.Point(266, 70);
+            this.pbAdministrator.Location = new System.Drawing.Point(42, 38);
             this.pbAdministrator.Name = "pbAdministrator";
-            this.pbAdministrator.Size = new System.Drawing.Size(154, 154);
+            this.pbAdministrator.Size = new System.Drawing.Size(220, 220);
             this.pbAdministrator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAdministrator.TabIndex = 0;
             this.pbAdministrator.TabStop = false;
@@ -93,7 +99,7 @@
             this.lblWelcome.Location = new System.Drawing.Point(0, 0);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblWelcome.Size = new System.Drawing.Size(430, 31);
+            this.lblWelcome.Size = new System.Drawing.Size(662, 31);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Hoş Geldin -name surname-";
             this.lblWelcome.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,7 +113,7 @@
             this.lblCustomer.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblCustomer.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblCustomer.Location = new System.Drawing.Point(47, 230);
+            this.lblCustomer.Location = new System.Drawing.Point(60, 307);
             this.lblCustomer.Name = "lblCustomer";
             this.lblCustomer.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCustomer.Size = new System.Drawing.Size(154, 27);
@@ -122,8 +128,8 @@
             this.lblAdministrator.AutoEllipsis = false;
             this.lblAdministrator.AutoSize = false;
             this.lblAdministrator.CursorType = null;
-            this.lblAdministrator.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblAdministrator.Location = new System.Drawing.Point(266, 230);
+            this.lblAdministrator.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAdministrator.Location = new System.Drawing.Point(75, 307);
             this.lblAdministrator.Name = "lblAdministrator";
             this.lblAdministrator.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAdministrator.Size = new System.Drawing.Size(154, 27);
@@ -156,11 +162,11 @@
             this.btnExit.ColorContrastOnClick = 45;
             this.btnExit.ColorContrastOnHover = 45;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnExit.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnExit.CustomizableEdges = borderEdges1;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -184,7 +190,7 @@
             this.btnExit.IdleIconLeftImage = null;
             this.btnExit.IdleIconRightImage = null;
             this.btnExit.IndicateFocus = false;
-            this.btnExit.Location = new System.Drawing.Point(427, 0);
+            this.btnExit.Location = new System.Drawing.Point(658, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.OnDisabledState.BorderRadius = 1;
@@ -234,7 +240,7 @@
             this.pnlHeadBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeadBar.Location = new System.Drawing.Point(0, 0);
             this.pnlHeadBar.Name = "pnlHeadBar";
-            this.pnlHeadBar.Size = new System.Drawing.Size(477, 30);
+            this.pnlHeadBar.Size = new System.Drawing.Size(708, 30);
             this.pnlHeadBar.TabIndex = 6;
             // 
             // dragControlHeadBar
@@ -250,29 +256,105 @@
             this.pnlHeadBarSeperator.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeadBarSeperator.Location = new System.Drawing.Point(0, 30);
             this.pnlHeadBarSeperator.Name = "pnlHeadBarSeperator";
-            this.pnlHeadBarSeperator.Size = new System.Drawing.Size(477, 1);
+            this.pnlHeadBarSeperator.Size = new System.Drawing.Size(708, 1);
             this.pnlHeadBarSeperator.TabIndex = 7;
             // 
-            // VersiyonSecim
+            // bunifuShadowPanel1
+            // 
+            this.bunifuShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuShadowPanel1.BorderRadius = 1;
+            this.bunifuShadowPanel1.BorderThickness = 1;
+            this.bunifuShadowPanel1.Controls.Add(this.pnlCustomerSeperator);
+            this.bunifuShadowPanel1.Controls.Add(this.pbCustomer);
+            this.bunifuShadowPanel1.Controls.Add(this.lblCustomer);
+            this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(38, 67);
+            this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
+            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.WhiteSmoke;
+            this.bunifuShadowPanel1.ShadowColor = System.Drawing.Color.DarkGray;
+            this.bunifuShadowPanel1.ShadowDept = 2;
+            this.bunifuShadowPanel1.ShadowDepth = 4;
+            this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.ForwardDiagonal;
+            this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(300, 400);
+            this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.bunifuShadowPanel1.TabIndex = 8;
+            // 
+            // pnlCustomerSeperator
+            // 
+            this.pnlCustomerSeperator.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(150)))), ((int)(((byte)(253)))));
+            this.pnlCustomerSeperator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCustomerSeperator.BackgroundImage")));
+            this.pnlCustomerSeperator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlCustomerSeperator.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlCustomerSeperator.BorderRadius = 5;
+            this.pnlCustomerSeperator.BorderThickness = 1;
+            this.pnlCustomerSeperator.Location = new System.Drawing.Point(0, 388);
+            this.pnlCustomerSeperator.Name = "pnlCustomerSeperator";
+            this.pnlCustomerSeperator.ShowBorders = true;
+            this.pnlCustomerSeperator.Size = new System.Drawing.Size(297, 12);
+            this.pnlCustomerSeperator.TabIndex = 0;
+            // 
+            // bunifuShadowPanel2
+            // 
+            this.bunifuShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuShadowPanel2.BorderRadius = 1;
+            this.bunifuShadowPanel2.BorderThickness = 1;
+            this.bunifuShadowPanel2.Controls.Add(this.bunifuPanel1);
+            this.bunifuShadowPanel2.Controls.Add(this.pbAdministrator);
+            this.bunifuShadowPanel2.Controls.Add(this.lblAdministrator);
+            this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.bunifuShadowPanel2.Location = new System.Drawing.Point(365, 67);
+            this.bunifuShadowPanel2.Name = "bunifuShadowPanel2";
+            this.bunifuShadowPanel2.PanelColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuShadowPanel2.PanelColor2 = System.Drawing.Color.WhiteSmoke;
+            this.bunifuShadowPanel2.ShadowColor = System.Drawing.Color.DarkGray;
+            this.bunifuShadowPanel2.ShadowDept = 2;
+            this.bunifuShadowPanel2.ShadowDepth = 4;
+            this.bunifuShadowPanel2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.ForwardDiagonal;
+            this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
+            this.bunifuShadowPanel2.Size = new System.Drawing.Size(300, 400);
+            this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.bunifuShadowPanel2.TabIndex = 9;
+            // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(150)))), ((int)(((byte)(253)))));
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 5;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Location = new System.Drawing.Point(0, 388);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(297, 12);
+            this.bunifuPanel1.TabIndex = 0;
+            // 
+            // PageSelectApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 290);
+            this.ClientSize = new System.Drawing.Size(708, 505);
+            this.Controls.Add(this.bunifuShadowPanel2);
+            this.Controls.Add(this.bunifuShadowPanel1);
             this.Controls.Add(this.pnlHeadBarSeperator);
             this.Controls.Add(this.pnlHeadBar);
-            this.Controls.Add(this.lblAdministrator);
-            this.Controls.Add(this.lblCustomer);
-            this.Controls.Add(this.pbAdministrator);
-            this.Controls.Add(this.pbCustomer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "VersiyonSecim";
+            this.Name = "PageSelectApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yummy Day";
             this.Shown += new System.EventHandler(this.VersiyonSecim_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrator)).EndInit();
             this.pnlHeadBar.ResumeLayout(false);
+            this.bunifuShadowPanel1.ResumeLayout(false);
+            this.bunifuShadowPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -289,5 +371,9 @@
         private System.Windows.Forms.Panel pnlHeadBar;
         private Bunifu.Framework.UI.BunifuDragControl dragControlHeadBar;
         private System.Windows.Forms.Panel pnlHeadBarSeperator;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
+        private Bunifu.UI.WinForms.BunifuPanel pnlCustomerSeperator;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
     }
 }

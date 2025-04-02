@@ -15,6 +15,19 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace RestoranMenu.Forms.Administrator
 {
+    /*
+     
+     1-) Sayfa Durumunu İlk Haline Getirme (Sıfırlama)
+     2-) ComboBox'a Verileri Ekleme
+     3-) Resim Seçim Butonu
+     4-) Kaydet Butonu
+        4.1-) Kategori Adı Alma
+        4.2-) Diyet Tipi Adı Alma
+        4.3-) Kayıt İşlemi
+     5-) TextBox Sadece Rakam Girişi
+
+     */
+
     public partial class PageAddFood : Form
     {
         SqlConnection con = new SqlConnection(SqlServer.ConnectionString);
@@ -29,6 +42,7 @@ namespace RestoranMenu.Forms.Administrator
             InitializeComponent();
             verileriYukle();
         }
+        // 1-)
         void durumSifirla()
         {
             tbFoodName.Text = "";
@@ -40,6 +54,7 @@ namespace RestoranMenu.Forms.Administrator
             pb_food.Image = null;
             verileriYukle();
         }
+        // 2-)
         void verileriYukle()
         {
             con.Open();
@@ -63,7 +78,7 @@ namespace RestoranMenu.Forms.Administrator
             dR2.Close();
 
         }
-
+        // 3-)
         private void btnResimSec_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
@@ -75,14 +90,15 @@ namespace RestoranMenu.Forms.Administrator
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     yol = ofd.FileName; // Seçilen dosyanın yolunu al
-                    pb_food.Image = Image.FromFile(yol); // PictureBox'a resmi yükle
-                    pb_food.SizeMode = PictureBoxSizeMode.StretchImage; // Resmi PictureBox'a sığdır
+                    pb_food.Image = Image.FromFile(yol);
+                    pb_food.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
             }
         }
+        // 4-)
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            //Kategori Adı Alma
+            // 4.1-)
             query = "SELECT category_id,category_name FROM categories WHERE category_name ='" + cbCategory.SelectedItem.ToString().Trim() + "'";
             command = new SqlCommand(query, con);
             SqlDataReader dR3 = command.ExecuteReader();
@@ -92,7 +108,7 @@ namespace RestoranMenu.Forms.Administrator
             }
             dR3.Close();
 
-            //Diyet Tipi Adı ALma
+            // 4.2-)
             if (cbDiet_type.SelectedItem != null)
             {
                 query = "SELECT diet_type_id FROM diet_types WHERE diet_type_name ='" + cbDiet_type.SelectedItem.ToString().Trim() + "'";
@@ -108,7 +124,7 @@ namespace RestoranMenu.Forms.Administrator
             //Resim
             byte[] imageData = File.ReadAllBytes(yol);
 
-
+            // 4.3-)
             if (string.IsNullOrEmpty(tbFoodName.Text) || string.IsNullOrEmpty(cbCategory.SelectedItem.ToString()) || string.IsNullOrEmpty(tbCalorie.Text) || string.IsNullOrEmpty(tbPrice.Text) || yol != "")
             {
                 try
@@ -154,9 +170,10 @@ namespace RestoranMenu.Forms.Administrator
 
         }
 
+        // 5-)
         private void SadeceRakamGirisi(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8) // 8: Backspace tuşu
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8) // (8: Backspace tuşu)
             {
                 e.Handled = true; // Tuşun işlenmesini engelle
             }
