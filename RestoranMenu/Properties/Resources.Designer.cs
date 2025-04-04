@@ -63,6 +63,26 @@ namespace RestoranMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap app_admin {
+            get {
+                object obj = ResourceManager.GetObject("app_admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap app_customer {
+            get {
+                object obj = ResourceManager.GetObject("app_customer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Closed_Eye_1 {
             get {
                 object obj = ResourceManager.GetObject("Closed Eye_1", resourceCulture);
