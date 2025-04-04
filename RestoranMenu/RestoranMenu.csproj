@@ -169,6 +169,12 @@
     <Compile Include="Classes\Fonksiyonlar\SiparisOlustur.cs" />
     <Compile Include="Classes\TemporaryDatas.cs" />
     <Compile Include="Classes\SqlServer.cs" />
+    <Compile Include="Forms\Administrator\PageEditFood.cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\PageEditFood.cs.Designer.cs">
+      <DependentUpon>PageEditFood.cs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Administrator\PageAddFood.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,11 +193,11 @@
     <Compile Include="Forms\Administrator\PageAnalysis.Designer.cs">
       <DependentUpon>PageAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Administrator\PageEditFood.cs">
+    <Compile Include="Forms\Administrator\PageEdit-DeleteFood.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\PageEditFood.Designer.cs">
-      <DependentUpon>PageEditFood.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\PageEdit-DeleteFood.Designer.cs">
+      <DependentUpon>PageEdit-DeleteFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Administrator\PageSelectApp.cs">
       <SubType>Form</SubType>
@@ -240,8 +246,11 @@
     <EmbeddedResource Include="Forms\Administrator\PageAnalysis.resx">
       <DependentUpon>PageAnalysis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Administrator\PageEditFood.resx">
-      <DependentUpon>PageEditFood.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\PageEdit-DeleteFood.resx">
+      <DependentUpon>PageEdit-DeleteFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\PageEditFood.cs.resx">
+      <DependentUpon>PageEditFood.cs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageSelectApp.resx">
       <DependentUpon>PageSelectApp.cs</DependentUpon>
@@ -291,6 +300,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <Content Include="Resources\app_admin.png" />
+    <Content Include="Resources\app_customer.png" />
     <Content Include="Resources\error_cloud.png" />
     <Content Include="Resources\LoginPage\Closed Eye-32.png" />
     <Content Include="Resources\LoginPage\Closed Eye_1.png" />

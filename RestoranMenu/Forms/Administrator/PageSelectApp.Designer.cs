@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageSelectApp));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pbCustomer = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pbAdministrator = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblWelcome = new Bunifu.UI.WinForms.BunifuLabel();
@@ -59,7 +59,7 @@
             this.pbCustomer.AutoSizeHeight = true;
             this.pbCustomer.BackColor = System.Drawing.Color.Transparent;
             this.pbCustomer.BorderRadius = 0;
-            this.pbCustomer.Image = global::RestoranMenu.Properties.Resources.manager;
+            this.pbCustomer.Image = global::RestoranMenu.Properties.Resources.app_customer;
             this.pbCustomer.IsCircle = false;
             this.pbCustomer.Location = new System.Drawing.Point(36, 38);
             this.pbCustomer.Name = "pbCustomer";
@@ -76,7 +76,7 @@
             this.pbAdministrator.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbAdministrator.AutoSizeHeight = true;
             this.pbAdministrator.BorderRadius = 0;
-            this.pbAdministrator.Image = global::RestoranMenu.Properties.Resources.Tableware;
+            this.pbAdministrator.Image = global::RestoranMenu.Properties.Resources.app_admin;
             this.pbAdministrator.IsCircle = false;
             this.pbAdministrator.Location = new System.Drawing.Point(42, 38);
             this.pbAdministrator.Name = "pbAdministrator";
@@ -112,13 +112,13 @@
             this.lblCustomer.AutoSize = false;
             this.lblCustomer.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblCustomer.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblCustomer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.lblCustomer.Location = new System.Drawing.Point(60, 307);
             this.lblCustomer.Name = "lblCustomer";
             this.lblCustomer.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCustomer.Size = new System.Drawing.Size(154, 27);
             this.lblCustomer.TabIndex = 2;
-            this.lblCustomer.Text = "Menü Paneli";
+            this.lblCustomer.Text = "Müşteri Girişi";
             this.lblCustomer.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCustomer.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -134,7 +134,7 @@
             this.lblAdministrator.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAdministrator.Size = new System.Drawing.Size(154, 27);
             this.lblAdministrator.TabIndex = 2;
-            this.lblAdministrator.Text = "Yönetim Paneli";
+            this.lblAdministrator.Text = "Yönetici Girişi";
             this.lblAdministrator.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblAdministrator.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -162,11 +162,11 @@
             this.btnExit.ColorContrastOnClick = 45;
             this.btnExit.ColorContrastOnHover = 45;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnExit.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnExit.CustomizableEdges = borderEdges4;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
