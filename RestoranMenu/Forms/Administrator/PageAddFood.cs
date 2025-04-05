@@ -125,7 +125,7 @@ namespace RestoranMenu.Forms.Administrator
             byte[] imageData = File.ReadAllBytes(yol);
 
             // 4.3-)
-            if (string.IsNullOrEmpty(tbFoodName.Text) || string.IsNullOrEmpty(cbCategory.SelectedItem.ToString()) || string.IsNullOrEmpty(tbCalorie.Text) || string.IsNullOrEmpty(tbPrice.Text) || yol != "")
+            if (string.IsNullOrEmpty(tbFoodName.Text) || string.IsNullOrEmpty(cbCategory.SelectedItem.ToString()) || string.IsNullOrEmpty(tbCalorie.Text) || string.IsNullOrEmpty(tbPrice.Text) || yol != "" || yol != string.Empty)
             {
                 try
                 {
@@ -167,7 +167,6 @@ namespace RestoranMenu.Forms.Administrator
             {
                 MessageBox.Show("Lütfen Boş Alan Bırakmayın!");
             }
-
         }
 
         // 5-)

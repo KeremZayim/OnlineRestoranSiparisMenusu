@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageMain));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnlHeadBar = new System.Windows.Forms.Panel();
             this.pnlTopColorBar = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblYonetimBar = new Bunifu.UI.WinForms.BunifuLabel();
@@ -46,6 +46,7 @@
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlLastOrders = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lblSonSatilanlar = new System.Windows.Forms.Label();
             this.pnlSeperator = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlLeft = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnSepet = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -62,7 +63,6 @@
             this.dragControlLogo = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.dragControlResim = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.trayIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.lblSonSatilanlar = new System.Windows.Forms.Label();
             this.pnlHeadBar.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.pnlLastOrders.SuspendLayout();
@@ -106,10 +106,10 @@
             this.lblYonetimBar.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblYonetimBar.Enabled = false;
             this.lblYonetimBar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblYonetimBar.Location = new System.Drawing.Point(3, 4);
+            this.lblYonetimBar.Location = new System.Drawing.Point(50, 0);
             this.lblYonetimBar.Name = "lblYonetimBar";
             this.lblYonetimBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblYonetimBar.Size = new System.Drawing.Size(1221, 22);
+            this.lblYonetimBar.Size = new System.Drawing.Size(1180, 30);
             this.lblYonetimBar.TabIndex = 7;
             this.lblYonetimBar.Text = "--";
             this.lblYonetimBar.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -134,11 +134,11 @@
             this.btnExit.ColorContrastOnClick = 45;
             this.btnExit.ColorContrastOnHover = 45;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnExit.CustomizableEdges = borderEdges10;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnExit.CustomizableEdges = borderEdges1;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -249,6 +249,16 @@
             this.pnlLastOrders.Size = new System.Drawing.Size(1033, 184);
             this.pnlLastOrders.TabIndex = 1;
             // 
+            // lblSonSatilanlar
+            // 
+            this.lblSonSatilanlar.AutoSize = true;
+            this.lblSonSatilanlar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSonSatilanlar.Location = new System.Drawing.Point(6, 3);
+            this.lblSonSatilanlar.Name = "lblSonSatilanlar";
+            this.lblSonSatilanlar.Size = new System.Drawing.Size(80, 16);
+            this.lblSonSatilanlar.TabIndex = 0;
+            this.lblSonSatilanlar.Text = "Son Satılanlar\r\n";
+            // 
             // pnlSeperator
             // 
             this.pnlSeperator.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
@@ -307,11 +317,11 @@
             this.btnSepet.ColorContrastOnClick = 45;
             this.btnSepet.ColorContrastOnHover = 45;
             this.btnSepet.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = false;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = false;
-            borderEdges11.TopRight = true;
-            this.btnSepet.CustomizableEdges = borderEdges11;
+            borderEdges2.BottomLeft = false;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = false;
+            borderEdges2.TopRight = true;
+            this.btnSepet.CustomizableEdges = borderEdges2;
             this.btnSepet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSepet.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSepet.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -398,11 +408,11 @@
             this.btnEtYemekleri.ColorContrastOnClick = 45;
             this.btnEtYemekleri.ColorContrastOnHover = 45;
             this.btnEtYemekleri.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = false;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = false;
-            borderEdges12.TopRight = true;
-            this.btnEtYemekleri.CustomizableEdges = borderEdges12;
+            borderEdges3.BottomLeft = false;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = false;
+            borderEdges3.TopRight = true;
+            this.btnEtYemekleri.CustomizableEdges = borderEdges3;
             this.btnEtYemekleri.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEtYemekleri.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEtYemekleri.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -489,11 +499,11 @@
             this.btnMakarnalar.ColorContrastOnClick = 45;
             this.btnMakarnalar.ColorContrastOnHover = 45;
             this.btnMakarnalar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges13.BottomLeft = false;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = false;
-            borderEdges13.TopRight = true;
-            this.btnMakarnalar.CustomizableEdges = borderEdges13;
+            borderEdges4.BottomLeft = false;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = false;
+            borderEdges4.TopRight = true;
+            this.btnMakarnalar.CustomizableEdges = borderEdges4;
             this.btnMakarnalar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnMakarnalar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnMakarnalar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -580,11 +590,11 @@
             this.btnCorbalar.ColorContrastOnClick = 45;
             this.btnCorbalar.ColorContrastOnHover = 45;
             this.btnCorbalar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges14.BottomLeft = false;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = false;
-            borderEdges14.TopRight = true;
-            this.btnCorbalar.CustomizableEdges = borderEdges14;
+            borderEdges5.BottomLeft = false;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = false;
+            borderEdges5.TopRight = true;
+            this.btnCorbalar.CustomizableEdges = borderEdges5;
             this.btnCorbalar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCorbalar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCorbalar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -671,11 +681,11 @@
             this.btnSebzeYemekleri.ColorContrastOnClick = 45;
             this.btnSebzeYemekleri.ColorContrastOnHover = 45;
             this.btnSebzeYemekleri.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges15.BottomLeft = false;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = false;
-            borderEdges15.TopRight = true;
-            this.btnSebzeYemekleri.CustomizableEdges = borderEdges15;
+            borderEdges6.BottomLeft = false;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = false;
+            borderEdges6.TopRight = true;
+            this.btnSebzeYemekleri.CustomizableEdges = borderEdges6;
             this.btnSebzeYemekleri.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSebzeYemekleri.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSebzeYemekleri.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -762,11 +772,11 @@
             this.btnIcecekler.ColorContrastOnClick = 45;
             this.btnIcecekler.ColorContrastOnHover = 45;
             this.btnIcecekler.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges16.BottomLeft = false;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = false;
-            borderEdges16.TopRight = true;
-            this.btnIcecekler.CustomizableEdges = borderEdges16;
+            borderEdges7.BottomLeft = false;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = false;
+            borderEdges7.TopRight = true;
+            this.btnIcecekler.CustomizableEdges = borderEdges7;
             this.btnIcecekler.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnIcecekler.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnIcecekler.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -853,11 +863,11 @@
             this.btnSalatalar.ColorContrastOnClick = 45;
             this.btnSalatalar.ColorContrastOnHover = 45;
             this.btnSalatalar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges17.BottomLeft = false;
-            borderEdges17.BottomRight = true;
-            borderEdges17.TopLeft = false;
-            borderEdges17.TopRight = true;
-            this.btnSalatalar.CustomizableEdges = borderEdges17;
+            borderEdges8.BottomLeft = false;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = false;
+            borderEdges8.TopRight = true;
+            this.btnSalatalar.CustomizableEdges = borderEdges8;
             this.btnSalatalar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSalatalar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSalatalar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -944,11 +954,11 @@
             this.btnTatlilar.ColorContrastOnClick = 45;
             this.btnTatlilar.ColorContrastOnHover = 45;
             this.btnTatlilar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges18.BottomLeft = false;
-            borderEdges18.BottomRight = true;
-            borderEdges18.TopLeft = false;
-            borderEdges18.TopRight = true;
-            this.btnTatlilar.CustomizableEdges = borderEdges18;
+            borderEdges9.BottomLeft = false;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = false;
+            borderEdges9.TopRight = true;
+            this.btnTatlilar.CustomizableEdges = borderEdges9;
             this.btnTatlilar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTatlilar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(162)))), ((int)(((byte)(162)))));
             this.btnTatlilar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(162)))), ((int)(((byte)(162)))));
@@ -1074,16 +1084,6 @@
             this.trayIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("trayIcon.Icon")));
             this.trayIcon.Text = "Yummy Day";
             this.trayIcon.Visible = true;
-            // 
-            // lblSonSatilanlar
-            // 
-            this.lblSonSatilanlar.AutoSize = true;
-            this.lblSonSatilanlar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSonSatilanlar.Location = new System.Drawing.Point(6, 3);
-            this.lblSonSatilanlar.Name = "lblSonSatilanlar";
-            this.lblSonSatilanlar.Size = new System.Drawing.Size(80, 16);
-            this.lblSonSatilanlar.TabIndex = 0;
-            this.lblSonSatilanlar.Text = "Son Satılanlar\r\n";
             // 
             // PageMain
             // 

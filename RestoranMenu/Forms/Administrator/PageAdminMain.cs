@@ -56,7 +56,7 @@ namespace RestoranMenu.Forms.Administrator
         }
         private void btnUrunDuzenle_Click(object sender, EventArgs e)
         {
-            ChildFormAc(new PageEditFood());
+            ChildFormAc(new PageEditDeleteFood());
         }
 
         private void btnAnaliz_Click(object sender, EventArgs e)

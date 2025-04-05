@@ -14,8 +14,9 @@ using System.Windows.Forms;
 
 namespace RestoranMenu.Forms.Administrator
 {
-    public partial class PageEditFood : Form
+    public partial class PageEditDeleteFood : Form
     {
+        SqlConnection con = new SqlConnection(SqlServer.ConnectionString);
         string query = @"
                 SELECT 
                     f.food_id, 
@@ -28,7 +29,7 @@ namespace RestoranMenu.Forms.Administrator
                 FROM foods f
                 LEFT JOIN categories c ON f.category_id = c.category_id
                 LEFT JOIN diet_types d ON f.diet_type_id = d.diet_type_id";
-        public PageEditFood()
+        public PageEditDeleteFood()
         {
             InitializeComponent();
             VerileriYukle(query);
@@ -69,48 +70,48 @@ namespace RestoranMenu.Forms.Administrator
         private void VerileriYukle(string query)
         {
             dgvFoods.Columns.Clear();
-            using (SqlConnection baglanti = new SqlConnection(SqlServer.ConnectionString))
+
+            try
             {
-                try
-                {
-                    baglanti.Open();
+                con.Open();
 
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, baglanti);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    dgvFoods.DataSource = dt;  // DataGridView'e bağla
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dgvFoods.DataSource = dt;  // DataGridView'e bağla
 
-                    // Çarpı butonunu eklemek için yeni bir sütun ekleyelim
-                    DataGridViewButtonColumn deleteColumn = new DataGridViewButtonColumn();
-                    deleteColumn.Name = "Sil";
-                    deleteColumn.HeaderText = "Sil";
-                    deleteColumn.Width = 50;
-                    deleteColumn.Text = "❌";
-                    deleteColumn.UseColumnTextForButtonValue = true;
-                    dgvFoods.Columns.Add(deleteColumn);
+                // Çarpı butonunu eklemek için yeni bir sütun ekleyelim
+                DataGridViewButtonColumn deleteColumn = new DataGridViewButtonColumn();
+                deleteColumn.Name = "Sil";
+                deleteColumn.HeaderText = "Sil";
+                deleteColumn.Width = 50;
+                deleteColumn.Text = "❌";
+                deleteColumn.UseColumnTextForButtonValue = true;
+                dgvFoods.Columns.Add(deleteColumn);
 
-                    // Sütun başlıklarını belirleme
-                    dgvFoods.Columns["food_id"].HeaderText = "Gıda ID";
-                    dgvFoods.Columns["food_name"].HeaderText = "Gıda Adı";
-                    dgvFoods.Columns["Kategori"].HeaderText = "Kategori";
-                    dgvFoods.Columns["Diyet Tipi"].HeaderText = "Diyet Tipi";
-                    dgvFoods.Columns["food_calorie"].HeaderText = "Kalori";
-                    dgvFoods.Columns["food_picture"].HeaderText = "Resim";
-                    dgvFoods.Columns["food_price"].HeaderText = "Fiyat";
+                // Sütun başlıklarını belirleme
+                dgvFoods.Columns["food_id"].HeaderText = "Gıda ID";
+                dgvFoods.Columns["food_name"].HeaderText = "Gıda Adı";
+                dgvFoods.Columns["Kategori"].HeaderText = "Kategori";
+                dgvFoods.Columns["Diyet Tipi"].HeaderText = "Diyet Tipi";
+                dgvFoods.Columns["food_calorie"].HeaderText = "Kalori";
+                dgvFoods.Columns["food_picture"].HeaderText = "Resim";
+                dgvFoods.Columns["food_price"].HeaderText = "Fiyat";
 
-                    // Sütun genişlikleri
-                    dgvFoods.Columns["food_id"].Width = 70;
-                    dgvFoods.Columns["food_name"].Width = 200;
-                    dgvFoods.Columns["Kategori"].Width = 150;
-                    dgvFoods.Columns["Diyet Tipi"].Width = 150;
-                    dgvFoods.Columns["food_calorie"].Width = 100;
-                    dgvFoods.Columns["food_picture"].Width = 170;
-                    dgvFoods.Columns["food_price"].Width = 100;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Hata: " + ex.Message);
-                }
+                // Sütun genişlikleri
+                dgvFoods.Columns["food_id"].Width = 70;
+                dgvFoods.Columns["food_name"].Width = 200;
+                dgvFoods.Columns["Kategori"].Width = 150;
+                dgvFoods.Columns["Diyet Tipi"].Width = 150;
+                dgvFoods.Columns["food_calorie"].Width = 100;
+                dgvFoods.Columns["food_picture"].Width = 170;
+                dgvFoods.Columns["food_price"].Width = 100;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
             }
         }
         private void dgvFoods_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -144,49 +145,47 @@ namespace RestoranMenu.Forms.Administrator
 
         private void DeleteFood(string foodName)
         {
-            using (SqlConnection baglanti = new SqlConnection(SqlServer.ConnectionString))
+            try
             {
-                try
+                con.Open();
+
+                // İlk olarak food_id'yi bul
+                string getFoodIdQuery = "SELECT food_id FROM dbo.foods WHERE food_name = @foodName";
+                SqlCommand getIdCmd = new SqlCommand(getFoodIdQuery, con);
+                getIdCmd.Parameters.AddWithValue("@foodName", foodName);
+
+                object foodIdObj = getIdCmd.ExecuteScalar();
+
+                if (foodIdObj == null)
                 {
-                    baglanti.Open();
+                    MessageBox.Show("Ürün bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-                    // İlk olarak food_id'yi bul
-                    string getFoodIdQuery = "SELECT food_id FROM dbo.foods WHERE food_name = @foodName";
-                    SqlCommand getIdCmd = new SqlCommand(getFoodIdQuery, baglanti);
-                    getIdCmd.Parameters.AddWithValue("@foodName", foodName);
+                int foodId = Convert.ToInt32(foodIdObj);
 
-                    object foodIdObj = getIdCmd.ExecuteScalar();
-
-                    if (foodIdObj == null)
-                    {
-                        MessageBox.Show("Ürün bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-
-                    int foodId = Convert.ToInt32(foodIdObj);
-
-                    // Silme işlemleri
-                    string deleteQuery = @"
+                // Silme işlemleri
+                string deleteQuery = @"
                 DELETE FROM dbo.foods_allergens WHERE food_id = @foodId;
                 DELETE FROM dbo.order_details WHERE food_id = @foodId;
                 DELETE FROM dbo.foods WHERE food_id = @foodId;
             ";
 
-                    SqlCommand komut = new SqlCommand(deleteQuery, baglanti);
-                    komut.Parameters.AddWithValue("@foodId", foodId);
+                SqlCommand komut = new SqlCommand(deleteQuery, con);
+                komut.Parameters.AddWithValue("@foodId", foodId);
 
-                    int affectedRows = komut.ExecuteNonQuery();
+                int affectedRows = komut.ExecuteNonQuery();
 
-                    if (affectedRows > 0)
-                        MessageBox.Show("Ürün başarıyla silindi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    else
-                        MessageBox.Show("Ürün silinemedi!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    VerileriYukle(query);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Hata: " + ex.Message);
-                }
+                if (affectedRows > 0)
+                    MessageBox.Show("Ürün başarıyla silindi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Ürün silinemedi!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                VerileriYukle(query);
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
             }
         }
 
@@ -231,6 +230,46 @@ namespace RestoranMenu.Forms.Administrator
             catch (Exception)
             {
                 throw;
+            }
+        }
+
+        private void dgvFoods_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Geçerli satır mı?
+            {
+                DataGridViewRow selectedRow = dgvFoods.Rows[e.RowIndex];
+
+                try
+                {
+                    Veriler.d_urun_id = int.Parse(selectedRow.Cells["food_id"].Value.ToString().Trim());
+                    string urun_query = "SELECT food_name,category_id,food_calorie,diet_type_id,food_picture,food_price FROM foods WHERE food_id = '" + Veriler.d_urun_id.ToString().Trim() + "'";
+
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(urun_query, con);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        Veriler.d_urun_adi = reader["food_name"].ToString().Trim();
+                        Veriler.d_urun_kalori = int.Parse(reader["food_calorie"].ToString().Trim());
+                        Veriler.d_urun_fiyat = int.Parse(reader["food_price"].ToString().Trim());
+                        if (reader["diet_type_id"] != DBNull.Value)
+                        {
+                            Veriler.d_urun_diyet_tipi_id = int.Parse(reader["diet_type_id"].ToString().Trim());
+                        }
+                        Veriler.d_urun_kategori_id = int.Parse(reader["category_id"].ToString().Trim());
+                        Veriler.d_urun_resim = (reader["food_picture"] as byte[]);
+                    }
+                    reader.Close();
+
+                    con.Close();
+
+                    PageEditFood editForm = new PageEditFood();
+                    editForm.ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ürün Bilgisi Alımında Hata: {ex}", "Hata!");
+                }
             }
         }
     }
