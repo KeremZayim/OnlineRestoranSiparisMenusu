@@ -148,6 +148,14 @@
         JkQfrTw3OVI5VF9+rAKAXysCxRhjte4F+VxoEpKiXqUAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAeCAYAAABuUU38AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABQSURBVFhH7c8xEQAgDMBAFLRKqxgZCICdQ0DKZfglW0Zl
+        zsrczc3xiC05QuMIjSM0jtA4QuMIjSM0jtA4QuMIjSM0jtA4QvPRSMS6YzsR6wDZKQS8tjJoCgAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAMMOAADDDgAAAAAAAAAA
@@ -222,14 +230,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAA/4AB//4AAH/8AAA/+AAAD/AAAA/gAAAHwAAAA4AAAAGAAAABAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABwAAAA8AA
         AAPgAAAH8AAAD/gAAB/8AAA//wAA///AA/8=
-</value>
-  </data>
-  <data name="btnExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAeCAYAAABuUU38AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABQSURBVFhH7c8xEQAgDMBAFLRKqxgZCICdQ0DKZfglW0Zl
-        zsrczc3xiC05QuMIjSM0jtA4QuMIjSM0jtA4QuMIjSM0jtA4QvPRSMS6YzsR6wDZKQS8tjJoCgAAAABJ
-        RU5ErkJggg==
 </value>
   </data>
   <metadata name="dragControlHeadBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

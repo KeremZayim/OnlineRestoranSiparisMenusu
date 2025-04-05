@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageSelectApp));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pbCustomer = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pbAdministrator = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblWelcome = new Bunifu.UI.WinForms.BunifuLabel();
@@ -96,10 +96,10 @@
             this.lblWelcome.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblWelcome.Enabled = false;
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblWelcome.Location = new System.Drawing.Point(0, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(50, 0);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblWelcome.Size = new System.Drawing.Size(662, 31);
+            this.lblWelcome.Size = new System.Drawing.Size(600, 30);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Hoş Geldin -name surname-";
             this.lblWelcome.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,11 +162,11 @@
             this.btnExit.ColorContrastOnClick = 45;
             this.btnExit.ColorContrastOnHover = 45;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnExit.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnExit.CustomizableEdges = borderEdges1;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -190,7 +190,7 @@
             this.btnExit.IdleIconLeftImage = null;
             this.btnExit.IdleIconRightImage = null;
             this.btnExit.IndicateFocus = false;
-            this.btnExit.Location = new System.Drawing.Point(658, 0);
+            this.btnExit.Location = new System.Drawing.Point(649, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.OnDisabledState.BorderRadius = 1;
@@ -240,7 +240,7 @@
             this.pnlHeadBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeadBar.Location = new System.Drawing.Point(0, 0);
             this.pnlHeadBar.Name = "pnlHeadBar";
-            this.pnlHeadBar.Size = new System.Drawing.Size(708, 30);
+            this.pnlHeadBar.Size = new System.Drawing.Size(700, 30);
             this.pnlHeadBar.TabIndex = 6;
             // 
             // dragControlHeadBar
@@ -256,7 +256,7 @@
             this.pnlHeadBarSeperator.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeadBarSeperator.Location = new System.Drawing.Point(0, 30);
             this.pnlHeadBarSeperator.Name = "pnlHeadBarSeperator";
-            this.pnlHeadBarSeperator.Size = new System.Drawing.Size(708, 1);
+            this.pnlHeadBarSeperator.Size = new System.Drawing.Size(700, 1);
             this.pnlHeadBarSeperator.TabIndex = 7;
             // 
             // bunifuShadowPanel1
@@ -339,7 +339,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 505);
+            this.ClientSize = new System.Drawing.Size(700, 505);
             this.Controls.Add(this.bunifuShadowPanel2);
             this.Controls.Add(this.bunifuShadowPanel1);
             this.Controls.Add(this.pnlHeadBarSeperator);

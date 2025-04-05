@@ -1,6 +1,6 @@
 ﻿namespace RestoranMenu.Forms.Administrator
 {
-    partial class PageEditFood
+    partial class PageEditDeleteFood
     {
         /// <summary>
         /// Required designer variable.
@@ -107,6 +107,7 @@
             this.dgvFoods.TabIndex = 0;
             this.dgvFoods.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgvFoods.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFoods_CellContentClick);
+            this.dgvFoods.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFoods_CellDoubleClick);
             // 
             // tbFoodName
             // 
@@ -188,6 +189,7 @@
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.AutoSize = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bunifuLabel1.Location = new System.Drawing.Point(318, 50);

@@ -169,11 +169,11 @@
     <Compile Include="Classes\Fonksiyonlar\SiparisOlustur.cs" />
     <Compile Include="Classes\TemporaryDatas.cs" />
     <Compile Include="Classes\SqlServer.cs" />
-    <Compile Include="Forms\Administrator\PageEditFood.cs.cs">
+    <Compile Include="Forms\Administrator\PageEditFood.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\PageEditFood.cs.Designer.cs">
-      <DependentUpon>PageEditFood.cs.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\PageEditFood.Designer.cs">
+      <DependentUpon>PageEditFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Administrator\PageAddFood.cs">
       <SubType>Form</SubType>
@@ -193,11 +193,11 @@
     <Compile Include="Forms\Administrator\PageAnalysis.Designer.cs">
       <DependentUpon>PageAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Administrator\PageEdit-DeleteFood.cs">
+    <Compile Include="Forms\Administrator\PageEditDeleteFood.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Administrator\PageEdit-DeleteFood.Designer.cs">
-      <DependentUpon>PageEdit-DeleteFood.cs</DependentUpon>
+    <Compile Include="Forms\Administrator\PageEditDeleteFood.Designer.cs">
+      <DependentUpon>PageEditDeleteFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Administrator\PageSelectApp.cs">
       <SubType>Form</SubType>
@@ -246,11 +246,11 @@
     <EmbeddedResource Include="Forms\Administrator\PageAnalysis.resx">
       <DependentUpon>PageAnalysis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Administrator\PageEdit-DeleteFood.resx">
-      <DependentUpon>PageEdit-DeleteFood.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\PageEditDeleteFood.resx">
+      <DependentUpon>PageEditDeleteFood.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Administrator\PageEditFood.cs.resx">
-      <DependentUpon>PageEditFood.cs.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Administrator\PageEditFood.resx">
+      <DependentUpon>PageEditFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageSelectApp.resx">
       <DependentUpon>PageSelectApp.cs</DependentUpon>

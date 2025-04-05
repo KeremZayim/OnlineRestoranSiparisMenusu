@@ -62,7 +62,14 @@ namespace RestoranMenu.Forms.Administrator
         // 1-)
         private void SonSatilanlariListele()
         {
-            pnlSonSatilanlar.Controls.Clear();
+            foreach (Control ctrl in pnlSonSatilanlar.Controls.OfType<Control>().ToList())
+            {
+                if (ctrl != pnlSonSatilanlarHeader)
+                {
+                    pnlSonSatilanlar.Controls.Remove(ctrl);
+                    ctrl.Dispose();  // Bellekten kaldır
+                }
+            }
 
             using (SqlConnection con = new SqlConnection(SqlServer.ConnectionString))
             {
@@ -146,7 +153,14 @@ namespace RestoranMenu.Forms.Administrator
         // 2-)
         private void EnCokSatilanlariListele()
         {
-            pnlEnCokSatilanlar.Controls.Clear();
+            foreach (Control ctrl in pnlEnCokSatilanlar.Controls.OfType<Control>().ToList())
+            {
+                if (ctrl != pnlEnCokSatilanlarHeader)
+                {
+                    pnlEnCokSatilanlar.Controls.Remove(ctrl);
+                    ctrl.Dispose();  // Bellekten kaldır
+                }
+            }
 
             using (SqlConnection con = new SqlConnection(SqlServer.ConnectionString))
             {

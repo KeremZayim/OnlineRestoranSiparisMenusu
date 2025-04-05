@@ -21,6 +21,7 @@ namespace RestoranMenu.Forms.Customer
 {
 
     /*
+     
         1-) FlowLayoutPanel ayarları
         2-) Dinamik Komponent Eklemeleri
             2.1-) Panel oluştur
@@ -30,7 +31,9 @@ namespace RestoranMenu.Forms.Customer
             2.5-) Fiyat label
             2.6-) Sepete Ekle Butonu
         3-) Control Eklemeleri
-     
+        4-) Sepete Ekle Butonu Click Event
+        5-) Alerjen ve Diyet Tipi Bilgisi (Resime Tıklayınca)
+
      */
     public partial class PageListFoods : Form
     {
@@ -41,7 +44,7 @@ namespace RestoranMenu.Forms.Customer
             this.Text = "Yemek Listesi";
             this.Size = new Size(1050, 780);
 
-            // 1-) FlowLayoutPanel ayarları
+            // 1-)
             flowPanel.Dock = DockStyle.Fill;
             flowPanel.Padding = new Padding(10, 10, 20, 10); // Sağdan ve soldan 20px boşluk bırakır
 
@@ -87,6 +90,7 @@ namespace RestoranMenu.Forms.Customer
                     pictureBox.Size = new System.Drawing.Size(190, 190);
                     pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
                     pictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+                    pictureBox.Click += new EventHandler(pbClick);
 
                     if (imageBytes != null)
                     {
@@ -236,6 +240,8 @@ namespace RestoranMenu.Forms.Customer
                 reader.Close();
             }
         }
+
+        // 4-)
         private void SepeteEkle_Click(object sender, EventArgs e)
         {
             BunifuButton button = sender as BunifuButton;
@@ -265,6 +271,64 @@ namespace RestoranMenu.Forms.Customer
                 }
             }
         }
+
+        // 5-)
+        private void pbClick(object sender, EventArgs e)
+        {
+            try
+            {
+                // Panelin nameLabel'ını al
+                BunifuPanel clickedPanel = (BunifuPanel)((PictureBox)sender).Parent; // PictureBox'ın üstündeki Panel
+                BunifuLabel nameLabel = (BunifuLabel)clickedPanel.Controls["nameLabel"];
+                string foodName = nameLabel.Text;
+
+                // Veritabanı bağlantısı
+                using (SqlConnection con = new SqlConnection(SqlServer.ConnectionString))
+                {
+                    con.Open();
+
+                    // 1. Alerjenleri Al
+                    string allergensQuery = @"SELECT a.allergen_name
+                                      FROM dbo.allergens AS a
+                                      INNER JOIN dbo.foods_allergens AS fa ON a.allergen_id = fa.allergen_id
+                                      INNER JOIN dbo.foods AS f ON fa.food_id = f.food_id
+                                      WHERE f.food_name = @foodName";
+
+                    SqlCommand cmdAllergens = new SqlCommand(allergensQuery, con);
+                    cmdAllergens.Parameters.AddWithValue("@foodName", foodName);
+
+                    SqlDataReader allergensReader = cmdAllergens.ExecuteReader();
+                    StringBuilder allergensList = new StringBuilder();
+                    while (allergensReader.Read())
+                    {
+                        allergensList.AppendLine(allergensReader["allergen_name"].ToString());
+                    }
+                    allergensReader.Close();
+
+                    // 2. Diyet Tipini Al
+                    string dietTypeQuery = @"SELECT dt.diet_type_name
+                                     FROM dbo.diet_types AS dt
+                                     INNER JOIN dbo.foods AS f ON f.diet_type_id = dt.diet_type_id
+                                     WHERE f.food_name = @foodName";
+
+                    SqlCommand cmdDietType = new SqlCommand(dietTypeQuery, con);
+                    cmdDietType.Parameters.AddWithValue("@foodName", foodName);
+
+                    string dietType = cmdDietType.ExecuteScalar()?.ToString();
+
+                    // MessageBox ile Alerjenler ve Diyet Tipini Göster
+                    string message = "Alerjenler:\n" + allergensList.ToString() + "\nDiyet Tipi: " + (dietType ?? "Yok");
+                    MessageBox.Show(message, foodName + " Bilgisi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    con.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
 
     }
 }
