@@ -78,7 +78,7 @@ namespace RestoranMenu.Forms.Administrator
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
-                dgvFoods.DataSource = dt;  // DataGridView'e bağla
+                dgvFoods.DataSource = dt;
 
                 // Çarpı butonunu eklemek için yeni bir sütun ekleyelim
                 DataGridViewButtonColumn deleteColumn = new DataGridViewButtonColumn();

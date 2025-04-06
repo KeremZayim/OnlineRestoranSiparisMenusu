@@ -169,6 +169,12 @@
     <Compile Include="Classes\Fonksiyonlar\SiparisOlustur.cs" />
     <Compile Include="Classes\TemporaryDatas.cs" />
     <Compile Include="Classes\SqlServer.cs" />
+    <Compile Include="Forms\Administrator\PageAllergens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\PageAllergens.Designer.cs">
+      <DependentUpon>PageAllergens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Administrator\PageEditFood.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +243,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Forms\Administrator\PageAllergens.resx">
+      <DependentUpon>PageAllergens.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageAddFood.resx">
       <DependentUpon>PageAddFood.cs</DependentUpon>
     </EmbeddedResource>

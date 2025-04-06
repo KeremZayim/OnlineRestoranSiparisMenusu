@@ -64,6 +64,9 @@ namespace RestoranMenu.Forms.Administrator
             ChildFormAc(new PageAnalysis());
         }
 
-
+        private void btnAlerjenler_Click(object sender, EventArgs e)
+        {
+            ChildFormAc(new PageAllergens());
+        }
     }
 }
