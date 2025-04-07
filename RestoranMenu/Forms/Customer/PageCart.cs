@@ -339,7 +339,7 @@ namespace RestoranMenu.Forms.Customer
             // 4.3-)
         private void btnSepeteEkle_Click(object sender, EventArgs e)
         {
-            if (Veriler.Siparisler.Count > 1)
+            if (Veriler.Siparisler.Count > 0)
             {
                 int orderId = SiparisOlustur.YeniSiparisEkle(int.Parse(Veriler.user_id));
 
