@@ -55,11 +55,13 @@
             this.lblPeronalInformation = new Bunifu.UI.WinForms.BunifuLabel();
             this.panelMain = new Bunifu.UI.WinForms.BunifuPanel();
             this.dragBar = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.pnlMainLeftSeperator = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlHeadBar.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlButtons.SuspendLayout();
             this.pnlPersonelInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // dragForm
@@ -166,6 +168,7 @@
             // 
             // pnlHeadBar
             // 
+            this.pnlHeadBar.BackColor = System.Drawing.SystemColors.Control;
             this.pnlHeadBar.Controls.Add(this.pnlTopColorBar);
             this.pnlHeadBar.Controls.Add(this.lblYonetimBar);
             this.pnlHeadBar.Controls.Add(this.btnExit);
@@ -177,7 +180,7 @@
             // 
             // pnlTopColorBar
             // 
-            this.pnlTopColorBar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
+            this.pnlTopColorBar.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.pnlTopColorBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTopColorBar.BackgroundImage")));
             this.pnlTopColorBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTopColorBar.BorderColor = System.Drawing.Color.Transparent;
@@ -426,6 +429,7 @@
             this.btnGidaAlerjenleri.TextMarginLeft = 0;
             this.btnGidaAlerjenleri.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnGidaAlerjenleri.UseDefaultRadiusAndThickness = true;
+            this.btnGidaAlerjenleri.Click += new System.EventHandler(this.btnGidaAlerjenleri_Click);
             // 
             // btnAlerjenler
             // 
@@ -773,6 +777,7 @@
             this.panelMain.BorderColor = System.Drawing.Color.Transparent;
             this.panelMain.BorderRadius = 3;
             this.panelMain.BorderThickness = 1;
+            this.panelMain.Controls.Add(this.pnlMainLeftSeperator);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(246, 31);
             this.panelMain.Name = "panelMain";
@@ -786,6 +791,21 @@
             this.dragBar.Horizontal = true;
             this.dragBar.TargetControl = this.pnlHeadBar;
             this.dragBar.Vertical = true;
+            // 
+            // pnlMainLeftSeperator
+            // 
+            this.pnlMainLeftSeperator.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlMainLeftSeperator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMainLeftSeperator.BackgroundImage")));
+            this.pnlMainLeftSeperator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlMainLeftSeperator.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlMainLeftSeperator.BorderRadius = 3;
+            this.pnlMainLeftSeperator.BorderThickness = 1;
+            this.pnlMainLeftSeperator.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMainLeftSeperator.Location = new System.Drawing.Point(0, 0);
+            this.pnlMainLeftSeperator.Name = "pnlMainLeftSeperator";
+            this.pnlMainLeftSeperator.ShowBorders = true;
+            this.pnlMainLeftSeperator.Size = new System.Drawing.Size(1, 737);
+            this.pnlMainLeftSeperator.TabIndex = 0;
             // 
             // PageAdminMain
             // 
@@ -806,6 +826,7 @@
             this.pnlButtons.ResumeLayout(false);
             this.pnlPersonelInformation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.panelMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -831,5 +852,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAnaliz;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnGidaAlerjenleri;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAlerjenler;
+        private Bunifu.UI.WinForms.BunifuPanel pnlMainLeftSeperator;
     }
 }

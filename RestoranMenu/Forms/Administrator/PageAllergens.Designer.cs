@@ -121,10 +121,10 @@
             this.pnlBaslik.BorderRadius = 10;
             this.pnlBaslik.Controls.Add(this.lblAlerjenler);
             this.pnlBaslik.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlBaslik.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(95)))), ((int)(((byte)(239)))));
-            this.pnlBaslik.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
-            this.pnlBaslik.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
-            this.pnlBaslik.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlBaslik.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlBaslik.GradientBottomRight = System.Drawing.Color.LightBlue;
+            this.pnlBaslik.GradientTopLeft = System.Drawing.Color.DodgerBlue;
+            this.pnlBaslik.GradientTopRight = System.Drawing.SystemColors.ActiveCaption;
             this.pnlBaslik.Location = new System.Drawing.Point(0, 0);
             this.pnlBaslik.Name = "pnlBaslik";
             this.pnlBaslik.Quality = 10;
@@ -176,7 +176,7 @@
             this.gbAlerjenEkle.Controls.Add(this.tbAlerjenAdi);
             this.gbAlerjenEkle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gbAlerjenEkle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gbAlerjenEkle.LabelAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbAlerjenEkle.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gbAlerjenEkle.LabelIndent = 10;
             this.gbAlerjenEkle.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.gbAlerjenEkle.Location = new System.Drawing.Point(49, 133);

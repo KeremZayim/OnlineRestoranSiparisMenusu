@@ -68,5 +68,10 @@ namespace RestoranMenu.Forms.Administrator
         {
             ChildFormAc(new PageAllergens());
         }
+
+        private void btnGidaAlerjenleri_Click(object sender, EventArgs e)
+        {
+            ChildFormAc(new PageFoodAllergens());
+        }
     }
 }

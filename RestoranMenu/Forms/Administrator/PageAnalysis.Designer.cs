@@ -32,7 +32,7 @@
             this.pnlHeader = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.lblAnalizSayfasiBaslik = new System.Windows.Forms.Label();
             this.pnlMain = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pnlDiger = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.lblEnCokSiparisVerenMusteriAdet = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblEnCokSiparisVerenMusteri = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblToplamSiparis = new Bunifu.UI.WinForms.BunifuLabel();
@@ -41,7 +41,7 @@
             this.lblEnCokSatilanUrunAdi = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblToplamSatilanUrunFiyati = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblToplamSatisAdet = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuGradientPanel3 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.pnlDigerHeader = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.lblDiger = new System.Windows.Forms.Label();
             this.pnlSonSatilanlar = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlSonSatilanlarHeader = new Bunifu.UI.WinForms.BunifuGradientPanel();
@@ -51,8 +51,8 @@
             this.lblEnCokSatilanlar = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlMain.SuspendLayout();
-            this.bunifuShadowPanel1.SuspendLayout();
-            this.bunifuGradientPanel3.SuspendLayout();
+            this.pnlDiger.SuspendLayout();
+            this.pnlDigerHeader.SuspendLayout();
             this.pnlSonSatilanlar.SuspendLayout();
             this.pnlSonSatilanlarHeader.SuspendLayout();
             this.pnlEnCokSatilanlar.SuspendLayout();
@@ -66,10 +66,10 @@
             this.pnlHeader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlHeader.BorderRadius = 10;
             this.pnlHeader.Controls.Add(this.lblAnalizSayfasiBaslik);
-            this.pnlHeader.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(95)))), ((int)(((byte)(239)))));
-            this.pnlHeader.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
-            this.pnlHeader.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
-            this.pnlHeader.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlHeader.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlHeader.GradientBottomRight = System.Drawing.Color.LightBlue;
+            this.pnlHeader.GradientTopLeft = System.Drawing.Color.DodgerBlue;
+            this.pnlHeader.GradientTopRight = System.Drawing.SystemColors.ActiveCaption;
             this.pnlHeader.Location = new System.Drawing.Point(44, 35);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Quality = 10;
@@ -92,7 +92,7 @@
             this.pnlMain.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.pnlMain.BorderRadius = 10;
             this.pnlMain.BorderThickness = 1;
-            this.pnlMain.Controls.Add(this.bunifuShadowPanel1);
+            this.pnlMain.Controls.Add(this.pnlDiger);
             this.pnlMain.Controls.Add(this.pnlSonSatilanlar);
             this.pnlMain.Controls.Add(this.pnlEnCokSatilanlar);
             this.pnlMain.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
@@ -110,35 +110,35 @@
             this.pnlMain.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlMain.TabIndex = 6;
             // 
-            // bunifuShadowPanel1
+            // pnlDiger
             // 
-            this.bunifuShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuShadowPanel1.BorderRadius = 1;
-            this.bunifuShadowPanel1.BorderThickness = 1;
-            this.bunifuShadowPanel1.Controls.Add(this.lblEnCokSiparisVerenMusteriAdet);
-            this.bunifuShadowPanel1.Controls.Add(this.lblEnCokSiparisVerenMusteri);
-            this.bunifuShadowPanel1.Controls.Add(this.lblToplamSiparis);
-            this.bunifuShadowPanel1.Controls.Add(this.lblToplamMusteri);
-            this.bunifuShadowPanel1.Controls.Add(this.lblEnCokSatilanUrunAdedi);
-            this.bunifuShadowPanel1.Controls.Add(this.lblEnCokSatilanUrunAdi);
-            this.bunifuShadowPanel1.Controls.Add(this.lblToplamSatilanUrunFiyati);
-            this.bunifuShadowPanel1.Controls.Add(this.lblToplamSatisAdet);
-            this.bunifuShadowPanel1.Controls.Add(this.bunifuGradientPanel3);
-            this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(189, 415);
-            this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
-            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.WhiteSmoke;
-            this.bunifuShadowPanel1.ShadowColor = System.Drawing.Color.DarkGray;
-            this.bunifuShadowPanel1.ShadowDept = 2;
-            this.bunifuShadowPanel1.ShadowDepth = 5;
-            this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.ForwardDiagonal;
-            this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(566, 257);
-            this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel1.TabIndex = 8;
+            this.pnlDiger.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDiger.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlDiger.BorderRadius = 1;
+            this.pnlDiger.BorderThickness = 1;
+            this.pnlDiger.Controls.Add(this.lblEnCokSiparisVerenMusteriAdet);
+            this.pnlDiger.Controls.Add(this.lblEnCokSiparisVerenMusteri);
+            this.pnlDiger.Controls.Add(this.lblToplamSiparis);
+            this.pnlDiger.Controls.Add(this.lblToplamMusteri);
+            this.pnlDiger.Controls.Add(this.lblEnCokSatilanUrunAdedi);
+            this.pnlDiger.Controls.Add(this.lblEnCokSatilanUrunAdi);
+            this.pnlDiger.Controls.Add(this.lblToplamSatilanUrunFiyati);
+            this.pnlDiger.Controls.Add(this.lblToplamSatisAdet);
+            this.pnlDiger.Controls.Add(this.pnlDigerHeader);
+            this.pnlDiger.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.pnlDiger.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.pnlDiger.Location = new System.Drawing.Point(189, 415);
+            this.pnlDiger.Name = "pnlDiger";
+            this.pnlDiger.PanelColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlDiger.PanelColor2 = System.Drawing.Color.WhiteSmoke;
+            this.pnlDiger.ShadowColor = System.Drawing.Color.DarkGray;
+            this.pnlDiger.ShadowDept = 2;
+            this.pnlDiger.ShadowDepth = 5;
+            this.pnlDiger.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.ForwardDiagonal;
+            this.pnlDiger.ShadowTopLeftVisible = false;
+            this.pnlDiger.Size = new System.Drawing.Size(566, 257);
+            this.pnlDiger.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.pnlDiger.TabIndex = 8;
             // 
             // lblEnCokSiparisVerenMusteriAdet
             // 
@@ -269,22 +269,22 @@
             this.lblToplamSatisAdet.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblToplamSatisAdet.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuGradientPanel3
+            // pnlDigerHeader
             // 
-            this.bunifuGradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
-            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.BorderRadius = 10;
-            this.bunifuGradientPanel3.Controls.Add(this.lblDiger);
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(95)))), ((int)(((byte)(239)))));
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(3, 3);
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(560, 45);
-            this.bunifuGradientPanel3.TabIndex = 6;
+            this.pnlDigerHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDigerHeader.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlDigerHeader.BackgroundImage")));
+            this.pnlDigerHeader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlDigerHeader.BorderRadius = 10;
+            this.pnlDigerHeader.Controls.Add(this.lblDiger);
+            this.pnlDigerHeader.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlDigerHeader.GradientBottomRight = System.Drawing.Color.LightBlue;
+            this.pnlDigerHeader.GradientTopLeft = System.Drawing.Color.DodgerBlue;
+            this.pnlDigerHeader.GradientTopRight = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlDigerHeader.Location = new System.Drawing.Point(3, 3);
+            this.pnlDigerHeader.Name = "pnlDigerHeader";
+            this.pnlDigerHeader.Quality = 10;
+            this.pnlDigerHeader.Size = new System.Drawing.Size(560, 45);
+            this.pnlDigerHeader.TabIndex = 6;
             // 
             // lblDiger
             // 
@@ -326,10 +326,10 @@
             this.pnlSonSatilanlarHeader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlSonSatilanlarHeader.BorderRadius = 10;
             this.pnlSonSatilanlarHeader.Controls.Add(this.lblSonSatilanlar);
-            this.pnlSonSatilanlarHeader.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(95)))), ((int)(((byte)(239)))));
-            this.pnlSonSatilanlarHeader.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
-            this.pnlSonSatilanlarHeader.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
-            this.pnlSonSatilanlarHeader.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlSonSatilanlarHeader.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlSonSatilanlarHeader.GradientBottomRight = System.Drawing.Color.LightBlue;
+            this.pnlSonSatilanlarHeader.GradientTopLeft = System.Drawing.Color.DodgerBlue;
+            this.pnlSonSatilanlarHeader.GradientTopRight = System.Drawing.SystemColors.ActiveCaption;
             this.pnlSonSatilanlarHeader.Location = new System.Drawing.Point(3, 3);
             this.pnlSonSatilanlarHeader.Name = "pnlSonSatilanlarHeader";
             this.pnlSonSatilanlarHeader.Quality = 10;
@@ -376,10 +376,10 @@
             this.pnlEnCokSatilanlarHeader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlEnCokSatilanlarHeader.BorderRadius = 10;
             this.pnlEnCokSatilanlarHeader.Controls.Add(this.lblEnCokSatilanlar);
-            this.pnlEnCokSatilanlarHeader.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(95)))), ((int)(((byte)(239)))));
-            this.pnlEnCokSatilanlarHeader.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
-            this.pnlEnCokSatilanlarHeader.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
-            this.pnlEnCokSatilanlarHeader.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlEnCokSatilanlarHeader.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(88)))), ((int)(((byte)(190)))));
+            this.pnlEnCokSatilanlarHeader.GradientBottomRight = System.Drawing.Color.LightBlue;
+            this.pnlEnCokSatilanlarHeader.GradientTopLeft = System.Drawing.Color.DodgerBlue;
+            this.pnlEnCokSatilanlarHeader.GradientTopRight = System.Drawing.SystemColors.ActiveCaption;
             this.pnlEnCokSatilanlarHeader.Location = new System.Drawing.Point(3, 3);
             this.pnlEnCokSatilanlarHeader.Name = "pnlEnCokSatilanlarHeader";
             this.pnlEnCokSatilanlarHeader.Quality = 10;
@@ -411,8 +411,8 @@
             this.Text = "Yummy Day | Restoran Analizi";
             this.pnlHeader.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
-            this.bunifuShadowPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel3.ResumeLayout(false);
+            this.pnlDiger.ResumeLayout(false);
+            this.pnlDigerHeader.ResumeLayout(false);
             this.pnlSonSatilanlar.ResumeLayout(false);
             this.pnlSonSatilanlarHeader.ResumeLayout(false);
             this.pnlEnCokSatilanlar.ResumeLayout(false);
@@ -432,8 +432,8 @@
         private Bunifu.UI.WinForms.BunifuShadowPanel pnlSonSatilanlar;
         private Bunifu.UI.WinForms.BunifuGradientPanel pnlSonSatilanlarHeader;
         private System.Windows.Forms.Label lblSonSatilanlar;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel3;
+        private Bunifu.UI.WinForms.BunifuShadowPanel pnlDiger;
+        private Bunifu.UI.WinForms.BunifuGradientPanel pnlDigerHeader;
         private System.Windows.Forms.Label lblDiger;
         private Bunifu.UI.WinForms.BunifuLabel lblToplamSatisAdet;
         private Bunifu.UI.WinForms.BunifuLabel lblToplamSatilanUrunFiyati;

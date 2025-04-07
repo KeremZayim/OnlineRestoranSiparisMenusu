@@ -205,6 +205,12 @@
     <Compile Include="Forms\Administrator\PageEditDeleteFood.Designer.cs">
       <DependentUpon>PageEditDeleteFood.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Administrator\PageFoodAllergens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\PageFoodAllergens.Designer.cs">
+      <DependentUpon>PageFoodAllergens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Administrator\PageSelectApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageEditFood.resx">
       <DependentUpon>PageEditFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\PageFoodAllergens.resx">
+      <DependentUpon>PageFoodAllergens.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\PageSelectApp.resx">
       <DependentUpon>PageSelectApp.cs</DependentUpon>

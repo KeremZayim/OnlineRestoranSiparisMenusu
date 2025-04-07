@@ -207,6 +207,13 @@
         tAEAAADgf69y8K4H77/b7Xa73W632+12u93unRsAAADgwzdbJhS9g8HdPwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="pnlMainLeftSeperator.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAEAAALhCAYAAACezs4iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAqSURBVEhL7dcxEQBACMRApOP1hDwDEr7eFOshVVuSXh4A
+        AAAAAD/07eUAZyN+8QtRwkgAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="pnlMenu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPYAAALhCAYAAABsXlnCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -365,8 +372,8 @@
   <data name="pnlTopColorBar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAAABCAYAAACBgAP1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAqSURBVFhH7dhBDQAgDACxk44ZsDmCDdJHTbSq2a05DQAA
-        AADwid1693cBNGoufOnZTlUAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAApSURBVFhH7dgxDQAwDAOwQC/XANlUGpUPk3CSpO20fQAA
+        AADAGbP39wEKG0DBU7r0egAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="lblYonetimBar.BaseStylesheet" xml:space="preserve">
