@@ -211,10 +211,10 @@
             this.lblEnCokSatilanUrunAdedi.AutoSize = false;
             this.lblEnCokSatilanUrunAdedi.CursorType = null;
             this.lblEnCokSatilanUrunAdedi.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEnCokSatilanUrunAdedi.Location = new System.Drawing.Point(226, 125);
+            this.lblEnCokSatilanUrunAdedi.Location = new System.Drawing.Point(415, 125);
             this.lblEnCokSatilanUrunAdedi.Name = "lblEnCokSatilanUrunAdedi";
             this.lblEnCokSatilanUrunAdedi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblEnCokSatilanUrunAdedi.Size = new System.Drawing.Size(198, 20);
+            this.lblEnCokSatilanUrunAdedi.Size = new System.Drawing.Size(128, 20);
             this.lblEnCokSatilanUrunAdedi.TabIndex = 10;
             this.lblEnCokSatilanUrunAdedi.Text = "Adeti: ";
             this.lblEnCokSatilanUrunAdedi.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -230,7 +230,7 @@
             this.lblEnCokSatilanUrunAdi.Location = new System.Drawing.Point(10, 125);
             this.lblEnCokSatilanUrunAdi.Name = "lblEnCokSatilanUrunAdi";
             this.lblEnCokSatilanUrunAdi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblEnCokSatilanUrunAdi.Size = new System.Drawing.Size(198, 20);
+            this.lblEnCokSatilanUrunAdi.Size = new System.Drawing.Size(399, 20);
             this.lblEnCokSatilanUrunAdi.TabIndex = 9;
             this.lblEnCokSatilanUrunAdi.Text = "En Çok Satılan Ürün: ";
             this.lblEnCokSatilanUrunAdi.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
